@@ -9,38 +9,148 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
+import { Route as ContactRouteImport } from './routes/contact'
+import { Route as CareersRouteImport } from './routes/careers'
+import { Route as CapabilitiesRouteImport } from './routes/capabilities'
+import { Route as AboutRouteImport } from './routes/about'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as OurGroupIndexRouteImport } from './routes/our-group.index'
+import { Route as OurGroupBrandRouteImport } from './routes/our-group.$brand'
 
+const ContactRoute = ContactRouteImport.update({
+  id: '/contact',
+  path: '/contact',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CareersRoute = CareersRouteImport.update({
+  id: '/careers',
+  path: '/careers',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CapabilitiesRoute = CapabilitiesRouteImport.update({
+  id: '/capabilities',
+  path: '/capabilities',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AboutRoute = AboutRouteImport.update({
+  id: '/about',
+  path: '/about',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const OurGroupIndexRoute = OurGroupIndexRouteImport.update({
+  id: '/our-group/',
+  path: '/our-group/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const OurGroupBrandRoute = OurGroupBrandRouteImport.update({
+  id: '/our-group/$brand',
+  path: '/our-group/$brand',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
+  '/capabilities': typeof CapabilitiesRoute
+  '/careers': typeof CareersRoute
+  '/contact': typeof ContactRoute
+  '/our-group/$brand': typeof OurGroupBrandRoute
+  '/our-group/': typeof OurGroupIndexRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
+  '/capabilities': typeof CapabilitiesRoute
+  '/careers': typeof CareersRoute
+  '/contact': typeof ContactRoute
+  '/our-group/$brand': typeof OurGroupBrandRoute
+  '/our-group': typeof OurGroupIndexRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
+  '/capabilities': typeof CapabilitiesRoute
+  '/careers': typeof CareersRoute
+  '/contact': typeof ContactRoute
+  '/our-group/$brand': typeof OurGroupBrandRoute
+  '/our-group/': typeof OurGroupIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths:
+    | '/'
+    | '/about'
+    | '/capabilities'
+    | '/careers'
+    | '/contact'
+    | '/our-group/$brand'
+    | '/our-group/'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to:
+    | '/'
+    | '/about'
+    | '/capabilities'
+    | '/careers'
+    | '/contact'
+    | '/our-group/$brand'
+    | '/our-group'
+  id:
+    | '__root__'
+    | '/'
+    | '/about'
+    | '/capabilities'
+    | '/careers'
+    | '/contact'
+    | '/our-group/$brand'
+    | '/our-group/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  AboutRoute: typeof AboutRoute
+  CapabilitiesRoute: typeof CapabilitiesRoute
+  CareersRoute: typeof CareersRoute
+  ContactRoute: typeof ContactRoute
+  OurGroupBrandRoute: typeof OurGroupBrandRoute
+  OurGroupIndexRoute: typeof OurGroupIndexRoute
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
+    '/contact': {
+      id: '/contact'
+      path: '/contact'
+      fullPath: '/contact'
+      preLoaderRoute: typeof ContactRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/careers': {
+      id: '/careers'
+      path: '/careers'
+      fullPath: '/careers'
+      preLoaderRoute: typeof CareersRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/capabilities': {
+      id: '/capabilities'
+      path: '/capabilities'
+      fullPath: '/capabilities'
+      preLoaderRoute: typeof CapabilitiesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/about': {
+      id: '/about'
+      path: '/about'
+      fullPath: '/about'
+      preLoaderRoute: typeof AboutRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/': {
       id: '/'
       path: '/'
@@ -48,11 +158,31 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/our-group/': {
+      id: '/our-group/'
+      path: '/our-group'
+      fullPath: '/our-group/'
+      preLoaderRoute: typeof OurGroupIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/our-group/$brand': {
+      id: '/our-group/$brand'
+      path: '/our-group/$brand'
+      fullPath: '/our-group/$brand'
+      preLoaderRoute: typeof OurGroupBrandRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  AboutRoute: AboutRoute,
+  CapabilitiesRoute: CapabilitiesRoute,
+  CareersRoute: CareersRoute,
+  ContactRoute: ContactRoute,
+  OurGroupBrandRoute: OurGroupBrandRoute,
+  OurGroupIndexRoute: OurGroupIndexRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
