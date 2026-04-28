@@ -36,10 +36,15 @@ export const Route = createRootRoute({
           "OWS Holdings is a global, multi-vertical group spanning automotive, defence, insurance, media, events, wellness and facility management. Headquartered in Sharjah.",
       },
       { name: "author", content: "OWS Holdings" },
-      { property: "og:title", content: "OWS Holdings — One Group. Seven Capabilities." },
-      { property: "og:description", content: "A global multi-vertical group built on trust, scale and integrated value." },
+      { property: "og:title", content: "OWS Holdings — One Group. Seven Capabilities. Infinite Value." },
+      { property: "og:description", content: "OWS Brilliance is a dynamic website for OWS Holdings, built with Framer Motion and TanStack." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "OWS Holdings — One Group. Seven Capabilities. Infinite Value." },
+      { name: "description", content: "OWS Brilliance is a dynamic website for OWS Holdings, built with Framer Motion and TanStack." },
+      { name: "twitter:description", content: "OWS Brilliance is a dynamic website for OWS Holdings, built with Framer Motion and TanStack." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/83bb9388-ed2c-4641-9e68-9db6d07c1141/id-preview-fbe10f94--12e9cf71-19c5-4813-aae8-0a46725fcafc.lovable.app-1777409956272.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/83bb9388-ed2c-4641-9e68-9db6d07c1141/id-preview-fbe10f94--12e9cf71-19c5-4813-aae8-0a46725fcafc.lovable.app-1777409956272.png" },
     ],
     links: [
       {
