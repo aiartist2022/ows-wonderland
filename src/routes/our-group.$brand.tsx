@@ -3,7 +3,7 @@ import { ArrowRight, ArrowUpRight, Check } from "lucide-react";
 import { motion } from "framer-motion";
 import { SiteShell } from "@/components/site/SiteShell";
 import { Reveal, Stagger, StaggerItem } from "@/components/site/Motion";
-import { BRANDS, type BrandSlug } from "@/lib/brands";
+import { BRANDS, type Brand, type BrandSlug } from "@/lib/brands";
 
 export const Route = createFileRoute("/our-group/$brand")({
   loader: ({ params }) => {
@@ -39,7 +39,7 @@ export const Route = createFileRoute("/our-group/$brand")({
 });
 
 function BrandPage() {
-  const { brand } = Route.useLoaderData();
+  const { brand } = Route.useLoaderData() as { brand: Brand };
   const params = Route.useParams();
   const idx = BRANDS.findIndex((b) => b.slug === (params.brand as BrandSlug));
   const next = BRANDS[(idx + 1) % BRANDS.length];
