@@ -1,8 +1,10 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { ArrowUpRight } from "lucide-react";
-import { SiteShell, PageHero } from "@/components/site/SiteShell";
+import { ArrowRight, Briefcase, Users, Layers, Handshake, Globe, ChevronRight, Link as LinkIcon, Puzzle, BarChart3, ShieldCheck } from "lucide-react";
+import { SiteShell } from "@/components/site/SiteShell";
 import { Reveal, Stagger, StaggerItem } from "@/components/site/Motion";
 import { BRANDS } from "@/lib/brands";
+import { RedesignHero, StatRow } from "@/components/site/Redesign";
+import capabilitiesHeroImg from "@/assets/capabilities-hero.png";
 
 export const Route = createFileRoute("/capabilities")({
   head: () => ({
@@ -16,63 +18,171 @@ export const Route = createFileRoute("/capabilities")({
   component: CapabilitiesPage,
 });
 
+const HERO_STATS = [
+  { icon: <Briefcase size={32} strokeWidth={1.5} />, value: "7", label: "BUSINESSES" },
+  { icon: <Users size={32} strokeWidth={1.5} />, value: "1000+", label: "EXPERTS" },
+  { icon: <Layers size={32} strokeWidth={1.5} />, value: "100+", label: "MAJOR PROJECTS DELIVERED" },
+  { icon: <Handshake size={32} strokeWidth={1.5} />, value: "10,000+", label: "ACTIVE CLIENTS" },
+  { icon: <Globe size={32} strokeWidth={1.5} />, value: "UAE & MENA", label: "PRIMARY GEOGRAPHY" },
+];
+
+const INTEGRATED_ADVANTAGE = [
+  { icon: <LinkIcon size={32} strokeWidth={1.5} />, title: "ONE TRUSTED PARTNER", desc: "One relationship across all your business needs." },
+  { icon: <Puzzle size={32} strokeWidth={1.5} />, title: "CROSS-VERTICAL SYNERGY", desc: "Every capability creates value for the others." },
+  { icon: <BarChart3 size={32} strokeWidth={1.5} />, title: "EFFICIENCY & COST SAVINGS", desc: "Streamlined operations, better outcomes." },
+  { icon: <ShieldCheck size={32} strokeWidth={1.5} />, title: "GOVERNMENT-GRADE TRUST", desc: "Proven track record with UAE government entities." },
+  { icon: <Globe size={32} strokeWidth={1.5} />, title: "REGIONAL REACH", desc: "Deep presence across UAE, MENA & beyond." },
+];
+
 function CapabilitiesPage() {
   return (
     <SiteShell>
-      <PageHero
-        eyebrow="Capabilities"
-        title={<>One conversation.<br /> Seven specialisms.</>}
-        subtitle="Every OWS business is a category leader on its own. Together, they form a network that compounds value for our partners across MENA."
-      />
+      <RedesignHero
+        title={<>OUR CAPABILITIES.<br /></>}
+        highlight="INFINITE IMPACT."
+        image={capabilitiesHeroImg}
+      >
+        <p className="mt-6 max-w-2xl text-lg text-foreground/80 md:text-xl">
+          Seven industry-leading capabilities working in synergy to deliver integrated solutions that drive
+          efficiency, growth and long-term value across the UAE, MENA and beyond.
+        </p>
+      </RedesignHero>
 
-      <section className="relative bg-[var(--ows-panel)] py-24">
-        <div className="mx-auto max-w-[1400px] px-6 lg:px-10">
-          <Stagger className="space-y-px">
+      <StatRow stats={HERO_STATS} />
+
+      {/* Seven Capabilities Grid */}
+      <section className="bg-black py-24 border-b border-white/5">
+        <div className="mx-auto w-full max-w-[1920px] px-6 lg:px-10">
+          <Reveal>
+            <h2 className="text-center font-display text-2xl font-black uppercase tracking-[0.2em] text-white">
+              THE SEVEN CAPABILITIES
+            </h2>
+            <div className="mx-auto mt-4 h-px w-24 bg-[var(--ows-red)]" />
+          </Reveal>
+
+          <Stagger className="mt-16 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {BRANDS.map((brand, i) => (
-              <StaggerItem key={brand.slug}>
-                <Link
-                  to="/our-group/$brand"
-                  params={{ brand: brand.slug }}
-                  className="group grid grid-cols-[60px_1fr_auto] items-center gap-6 border-b border-white/5 py-8 transition-all hover:bg-black/40 md:grid-cols-[80px_1fr_2fr_auto] md:gap-10 md:py-10"
-                >
-                  <span className="font-display text-2xl font-black text-foreground/30 md:text-3xl">
-                    {String(i + 1).padStart(2, "0")}
-                  </span>
-                  <div>
-                    <p
-                      className="text-[10px] font-bold uppercase tracking-[0.25em]"
-                      style={{ color: brand.color }}
-                    >
-                      {brand.category}
-                    </p>
-                    <h3 className="mt-2 font-display text-2xl font-black uppercase tracking-tight text-foreground md:text-4xl">
-                      {brand.name}
-                    </h3>
+              <StaggerItem key={brand.slug} className={i >= 4 ? "lg:col-span-1" : ""}>
+                <div className="group relative flex h-full flex-col overflow-hidden border border-white/10 bg-black transition-all hover:border-[var(--ows-red)]">
+                  {/* Image Section */}
+                  <div className="relative aspect-video w-full overflow-hidden">
+                    <img 
+                      src={brand.image} 
+                      alt={brand.name} 
+                      className="h-full w-full object-cover opacity-80 transition-transform duration-700 group-hover:scale-110 group-hover:opacity-100" 
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent" />
+                    
+                    {/* Number Badge */}
+                    <div className="absolute top-4 left-4 font-display text-sm font-bold text-[var(--ows-red)] opacity-100 drop-shadow-md bg-black/40 px-2 rounded">
+                      {String(i + 1).padStart(2, "0")}
+                    </div>
+                    
+                    {/* Logo/Name overlay */}
+                    <div className="absolute inset-0 flex items-center justify-center p-6">
+                      <div className="text-center bg-black/40 p-4 rounded backdrop-blur-sm">
+                        {brand.logo ? (
+                          <div className="flex h-12 w-32 items-center justify-center mx-auto">
+                            <img src={brand.logo} alt={brand.name} className="max-h-full max-w-full object-contain" />
+                          </div>
+                        ) : (
+                          <>
+                            <h3 className="font-display text-2xl font-black uppercase tracking-widest drop-shadow-lg" style={{ color: brand.color }}>
+                              {brand.name.split(" ")[0]}
+                            </h3>
+                            {brand.name.split(" ").length > 1 && (
+                              <h4 className="font-display text-sm font-bold uppercase tracking-widest text-white drop-shadow-md">
+                                {brand.name.split(" ").slice(1).join(" ")}
+                              </h4>
+                            )}
+                          </>
+                        )}
+                      </div>
+                    </div>
                   </div>
-                  <p className="hidden text-foreground/70 md:block">{brand.description}</p>
-                  <ArrowUpRight
-                    size={28}
-                    className="text-foreground/40 transition-all group-hover:rotate-45 group-hover:text-foreground"
-                  />
-                </Link>
+
+                  {/* Content Section */}
+                  <div className="flex flex-col flex-grow p-6">
+                    <h4 className="font-display text-sm font-bold text-white mb-4">
+                      {brand.tagline}
+                    </h4>
+                    
+                    <ul className="mb-8 space-y-2 flex-grow">
+                      {brand.services.slice(0, 5).map((service, idx) => (
+                        <li key={idx} className="flex items-start gap-2 text-[11px] text-foreground/70">
+                          <span className="mt-1 h-1 w-1 rounded-full bg-[var(--ows-red)] flex-shrink-0" />
+                          <span>{service}</span>
+                        </li>
+                      ))}
+                    </ul>
+
+                    <Link
+                      to="/our-group/$brand"
+                      params={{ brand: brand.slug }}
+                      className="mt-auto inline-flex items-center gap-2 text-[10px] font-bold uppercase tracking-widest text-[var(--ows-red)] hover:underline"
+                    >
+                      LEARN MORE <ArrowRight size={14} />
+                    </Link>
+                  </div>
+                </div>
               </StaggerItem>
             ))}
           </Stagger>
         </div>
       </section>
 
-      <section className="relative overflow-hidden border-t border-white/5 bg-black py-24">
-        <div className="absolute inset-0 bg-radial-red opacity-30" />
-        <div className="relative mx-auto max-w-[1400px] px-6 lg:px-10">
+      {/* Integrated Advantage */}
+      <section className="bg-[var(--ows-panel)] py-24 border-b border-white/5 overflow-hidden">
+        <div className="mx-auto w-full max-w-[1920px] px-6 lg:px-10">
           <Reveal>
-            <p className="text-[11px] font-bold uppercase tracking-[0.35em] text-[var(--ows-red)]">— Cross-Vertical Synergy</p>
-            <h2 className="mt-4 max-w-4xl font-display text-4xl font-black uppercase leading-[0.95] tracking-tight text-foreground md:text-6xl">
-              The whole is exponentially greater than the sum of its parts.
+            <h2 className="text-center font-display text-2xl font-black uppercase tracking-[0.2em] text-white">
+              OUR INTEGRATED ADVANTAGE
             </h2>
-            <p className="mt-6 max-w-2xl text-lg text-foreground/70">
-              A single fleet contract can unlock motor insurance, performance marketing, corporate wellness packages and on-site facility management — all from one trusted partner.
-            </p>
+            <div className="mx-auto mt-4 mb-16 h-px w-24 bg-[var(--ows-red)]" />
           </Reveal>
+
+          <div className="relative flex flex-col md:flex-row justify-between items-center gap-8 md:gap-4">
+            {INTEGRATED_ADVANTAGE.map((item, i) => (
+              <Reveal key={i} delay={i * 0.15} className="flex-1 flex flex-col items-center text-center relative z-10 w-full">
+                <div className="mb-6 text-[var(--ows-red)] opacity-80">
+                  {item.icon}
+                </div>
+                <h3 className="font-display text-xs font-bold uppercase tracking-widest text-white mb-2">
+                  {item.title}
+                </h3>
+                <p className="text-[10px] text-foreground/60 px-4">
+                  {item.desc}
+                </p>
+                {/* Chevrons connecting them (hide on last item, and hide on mobile) */}
+                {i < INTEGRATED_ADVANTAGE.length - 1 && (
+                  <div className="hidden md:block absolute top-6 -right-6 text-[var(--ows-red)]/30">
+                    <ChevronRight size={24} />
+                  </div>
+                )}
+              </Reveal>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Footer Banner */}
+      <section className="bg-black py-16">
+        <div className="mx-auto w-full max-w-[1920px] px-6 lg:px-10">
+          <div className="border border-[var(--ows-red)]/30 bg-[var(--ows-panel)] p-8 md:p-12 flex flex-col md:flex-row items-center justify-between gap-8">
+            <div>
+              <h2 className="font-display text-2xl md:text-3xl font-black uppercase leading-tight text-white">
+                ONE GROUP.<br />
+                SEVEN CAPABILITIES.<br />
+                <span className="text-[var(--ows-red)]">INFINITE VALUE.</span>
+              </h2>
+            </div>
+            <div className="max-w-md text-sm text-foreground/60 md:text-center">
+              When our capabilities come together, your business moves further, faster.
+            </div>
+            <button className="border border-[var(--ows-red)] px-8 py-4 text-[11px] font-bold uppercase tracking-widest text-[var(--ows-red)] transition-all hover:bg-[var(--ows-red)] hover:text-white">
+              GET IN TOUCH
+            </button>
+          </div>
         </div>
       </section>
     </SiteShell>

@@ -6,6 +6,14 @@ import meltMedia from "@/assets/brand-melt-media.jpg";
 import platform from "@/assets/brand-platform.jpg";
 import handy from "@/assets/brand-handy.jpg";
 
+import logoAjIndustries from "@/assets/logo-aj-industries.png";
+import logoHandyBunch from "@/assets/logo-handy-bunch.jpg";
+import logoOwsAutomotive from "@/assets/logo-ows-automotive.png";
+import logoAjibInsurance from "@/assets/logo-ajib-insurance.png";
+import logoMeltLive from "@/assets/logo-melt-live.png";
+import logoMeltMedia from "@/assets/logo-melt-media.png";
+import logoPlatformHealth from "@/assets/logo-platform-health.png";
+
 export type BrandSlug =
   | "ows-automotive"
   | "aj-industries"
@@ -23,6 +31,7 @@ export interface Brand {
   category: string;
   color: string;
   image: string;
+  logo?: string;
   description: string;
   services: string[];
   clients: string[];
@@ -39,6 +48,7 @@ export const BRANDS: Brand[] = [
     category: "FLEET MRO, PARTS & SMART FLEET",
     color: "#E11D2E",
     image: automotive,
+    logo: logoOwsAutomotive,
     description:
       "A leading global provider of end-to-end fleet automotive services. Headquartered in Sharjah with operations across 14 countries, ~3,000 employees and revenues approaching US$800M.",
     services: [
@@ -69,6 +79,7 @@ export const BRANDS: Brand[] = [
     category: "DEFENCE & INDUSTRIAL (JV)",
     color: "#C9A24A",
     image: industries,
+    logo: logoAjIndustries,
     description:
       "A defence and industrial joint venture between AJ Holding LLC and OWS Automotive, delivering spare parts, MRO services and automotive solutions to the UAE Armed Forces (GHQ) and government entities.",
     services: [
@@ -94,6 +105,7 @@ export const BRANDS: Brand[] = [
     category: "MOTOR, MEDICAL & LIABILITY BROKERAGE",
     color: "#4A7BD8",
     image: insurance,
+    logo: logoAjibInsurance,
     description:
       "A UAE-based insurance brokerage delivering innovative, genuine insurance solutions across motor, medical, liability, cyber and aviation lines — built around fraud minimisation and exceeding UAE regulatory standards.",
     services: [
@@ -123,6 +135,7 @@ export const BRANDS: Brand[] = [
     category: "WORLD-CLASS EVENTS & BRAND EXPERIENCES",
     color: "#B14CFF",
     image: meltLive,
+    logo: logoMeltLive,
     description:
       "A joint venture between OWS Capital and Steve Harvey Global, bridging Western and Eastern business cultures through original IP festivals, A-list celebrity experiences and government programmes across MENA.",
     services: [
@@ -147,6 +160,7 @@ export const BRANDS: Brand[] = [
     category: "PERFORMANCE MARKETING & DIGITAL MEDIA",
     color: "#2DD4D4",
     image: meltMedia,
+    logo: logoMeltMedia,
     description:
       "A full-service performance marketing and digital media agency — co-founded by Steve Harvey, Oweis Zahran and Claire Romano. Combines performance data, creative content and AI-powered tech to build digital ecosystems for brands.",
     services: [
@@ -176,6 +190,7 @@ export const BRANDS: Brand[] = [
     category: "PREMIUM GYM & CORPORATE WELLNESS",
     color: "#4ADE80",
     image: platform,
+    logo: logoPlatformHealth,
     description:
       "Sharjah's first integrated premium health club — combining world-class gym facilities, padel courts, personal training, nutrition and recovery. Operated by OWS Capital with Sharjah Co-operative Society.",
     services: [
@@ -204,6 +219,7 @@ export const BRANDS: Brand[] = [
     category: "FACILITY MANAGEMENT & TECHNICAL SERVICES",
     color: "#F5A524",
     image: handy,
+    logo: logoHandyBunch,
     description:
       "A UAE-based facility management company delivering housekeeping, technical, and renovation services for residential, commercial, and light industrial properties — the on-the-ground operations arm of OWS Holdings.",
     services: [

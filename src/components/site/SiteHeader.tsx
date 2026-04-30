@@ -2,6 +2,7 @@ import { Link, useRouterState } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
+import logoImg from "@/assets/logo.png";
 
 const NAV = [
   { to: "/", label: "Home" },
@@ -34,15 +35,9 @@ export function SiteHeader() {
           : "bg-gradient-to-b from-black/60 to-transparent"
       }`}
     >
-      <div className="mx-auto flex max-w-[1400px] items-center justify-between px-6 py-4 lg:px-10">
-        <Link to="/" className="group flex items-center gap-2">
-          <div className="flex h-9 items-center">
-            <span className="font-display text-2xl font-black tracking-tight text-foreground">OWS</span>
-            <span className="ml-1 mt-1 h-[3px] w-6 bg-[var(--ows-red)] transition-all group-hover:w-10" />
-          </div>
-          <span className="hidden text-[10px] font-semibold uppercase tracking-[0.3em] text-foreground/60 sm:block">
-            Holdings
-          </span>
+      <div className="mx-auto flex w-full max-w-[1920px] items-center justify-between px-6 py-4 lg:px-10">
+        <Link to="/" className="group flex items-center">
+          <img src={logoImg} alt="OWS Holdings" className="h-20 w-auto object-contain scale-125 origin-left" />
         </Link>
 
         <nav className="hidden items-center gap-8 lg:flex">

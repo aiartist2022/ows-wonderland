@@ -32,7 +32,7 @@ export function PageHero({
           background: `radial-gradient(ellipse 80% 60% at 50% 0%, ${accent}33 0%, transparent 60%)`,
         }}
       />
-      <div className="relative mx-auto max-w-[1400px] px-6 lg:px-10">
+      <div className="relative mx-auto w-full max-w-[1920px] px-6 lg:px-10">
         <p
           className="text-[11px] font-bold uppercase tracking-[0.35em]"
           style={{ color: accent }}

@@ -1,13 +1,14 @@
 import { Link } from "@tanstack/react-router";
 import { Linkedin, Instagram, Mail, ArrowUpRight } from "lucide-react";
 import { BRANDS } from "@/lib/brands";
+import logoImg from "@/assets/logo.png";
 
 export function SiteFooter() {
   return (
     <footer className="relative border-t border-white/5 bg-black">
       <div className="relative overflow-hidden border-b border-white/5 bg-gradient-to-r from-[#7a0a14] via-[var(--ows-red)] to-[#7a0a14]">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(0,0,0,0)_0%,rgba(0,0,0,0.5)_100%)]" />
-        <div className="relative mx-auto flex max-w-[1400px] flex-col items-start justify-between gap-6 px-6 py-12 lg:flex-row lg:items-center lg:px-10">
+        <div className="relative mx-auto flex w-full max-w-[1920px] flex-col items-start justify-between gap-6 px-6 py-12 lg:flex-row lg:items-center lg:px-10">
           <div>
             <h3 className="font-display text-3xl font-black uppercase tracking-tight text-foreground md:text-5xl">
               One Group. <span className="text-foreground/70">Limitless Possibilities.</span>
@@ -26,16 +27,13 @@ export function SiteFooter() {
         </div>
       </div>
 
-      <div className="mx-auto max-w-[1400px] px-6 py-16 lg:px-10">
+      <div className="mx-auto w-full max-w-[1920px] px-6 py-16 lg:px-10">
         <div className="grid gap-12 lg:grid-cols-4">
           <div>
-            <div className="flex items-center">
-              <span className="font-display text-3xl font-black text-foreground">OWS</span>
-              <span className="ml-1 mt-1 h-[4px] w-8 bg-[var(--ows-red)]" />
+            <div className="flex items-center mb-4">
+              <img src={logoImg} alt="OWS Holdings" className="h-24 w-auto object-contain scale-125 origin-left" />
             </div>
-            <p className="mt-2 text-[10px] font-semibold uppercase tracking-[0.3em] text-foreground/50">
-              Holdings
-            </p>
+
             <p className="mt-6 max-w-xs text-sm leading-relaxed text-foreground/60">
               One Group. Seven Capabilities. <span className="text-[var(--ows-red)]">Infinite Value.</span>
             </p>

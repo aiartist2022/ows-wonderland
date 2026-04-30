@@ -52,16 +52,16 @@ function Hero() {
       {/* Skyline */}
       <motion.div
         style={reduce ? undefined : { y: skyY }}
-        className="absolute inset-x-0 bottom-0 h-[80vh]"
+        className="absolute inset-0"
       >
         <img
           src={skylineImg}
           alt="Dubai skyline at night"
-          className="h-full w-full object-cover object-bottom opacity-70"
+          className="h-full w-full object-cover object-center opacity-70"
           width={1920}
           height={1080}
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-black via-black/80 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black via-black/20 to-black" />
       </motion.div>
 
       {/* Red glow */}
@@ -76,7 +76,7 @@ function Hero() {
         initial={{ opacity: 0, scale: 0.85, y: 40 }}
         animate={{ opacity: 1, scale: 1, y: 0 }}
         transition={{ duration: 1.4, ease: [0.16, 1, 0.3, 1], delay: 0.3 }}
-        className="pointer-events-none absolute left-1/2 top-[42%] z-10 w-[min(720px,90vw)] -translate-x-1/2 -translate-y-1/2"
+        className="pointer-events-none absolute left-1/2 top-[42%] z-0 w-[min(720px,90vw)] -translate-x-1/2 -translate-y-1/2 lg:left-auto lg:right-[5%] lg:translate-x-0"
       >
         <img
           src={umbrellaImg}
@@ -90,7 +90,7 @@ function Hero() {
       {/* Content */}
       <motion.div
         style={reduce ? undefined : { y: titleY }}
-        className="relative z-20 mx-auto flex min-h-screen max-w-[1400px] flex-col justify-end px-6 pb-24 pt-40 lg:px-10 lg:pb-32"
+        className="relative z-20 mx-auto flex min-h-screen w-full max-w-[1920px] flex-col justify-end px-6 pb-24 pt-40 lg:px-10 lg:pb-32"
       >
         <motion.p
           initial={{ opacity: 0, y: 20 }}
@@ -158,7 +158,7 @@ function Hero() {
 function CapabilityRail() {
   return (
     <section className="relative border-t border-white/5 bg-black py-24 lg:py-32">
-      <div className="mx-auto max-w-[1400px] px-6 lg:px-10">
+      <div className="mx-auto w-full max-w-[1920px] px-6 lg:px-10">
         <div className="flex flex-col items-start justify-between gap-6 lg:flex-row lg:items-end">
           <div>
             <p className="text-[11px] font-bold uppercase tracking-[0.35em] text-[var(--ows-red)]">— Our Capabilities</p>
@@ -171,7 +171,7 @@ function CapabilityRail() {
           </Link>
         </div>
 
-        <div className="mt-14 grid grid-cols-2 gap-3 md:grid-cols-4 lg:grid-cols-7">
+        <div className="mt-14 grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-7">
           {BRANDS.map((brand, i) => (
             <motion.div
               key={brand.slug}
@@ -180,7 +180,7 @@ function CapabilityRail() {
               viewport={{ once: true, margin: "-80px" }}
               transition={{ duration: 0.7, delay: i * 0.06, ease: [0.16, 1, 0.3, 1] }}
               whileHover={{ y: -8 }}
-              className="group relative aspect-[3/5] overflow-hidden border border-white/5 bg-black"
+              className="group relative aspect-[4/5] sm:aspect-[3/4] lg:aspect-[3/5] overflow-hidden border border-white/5 bg-black"
             >
               <Link to="/our-group/$brand" params={{ brand: brand.slug }} className="absolute inset-0">
                 <img
@@ -196,12 +196,18 @@ function CapabilityRail() {
                 />
                 <div className="relative flex h-full flex-col justify-between p-4 lg:p-5">
                   <div>
-                    <span
-                      className="font-display text-5xl font-black"
-                      style={{ color: brand.color }}
-                    >
-                      {brand.short}
-                    </span>
+                    {brand.logo ? (
+                      <div className="flex h-16 w-32 lg:h-20 lg:w-40 items-center justify-start opacity-80 transition-opacity group-hover:opacity-100">
+                        <img src={brand.logo} alt={brand.name} className="max-h-full max-w-full object-contain object-left" />
+                      </div>
+                    ) : (
+                      <span
+                        className="font-display text-5xl font-black"
+                        style={{ color: brand.color }}
+                      >
+                        {brand.short}
+                      </span>
+                    )}
                   </div>
                   <div>
                     <p
@@ -231,7 +237,7 @@ function Pillars() {
   return (
     <section className="relative overflow-hidden border-t border-white/5 bg-[var(--ows-panel)] py-24 lg:py-32">
       <div className="absolute inset-0 bg-grid opacity-30" />
-      <div className="relative mx-auto max-w-[1400px] px-6 lg:px-10">
+      <div className="relative mx-auto w-full max-w-[1920px] px-6 lg:px-10">
         <div className="grid gap-12 lg:grid-cols-12">
           <Reveal className="lg:col-span-5">
             <p className="text-[11px] font-bold uppercase tracking-[0.35em] text-[var(--ows-red)]">— Why OWS</p>
@@ -268,7 +274,7 @@ function ByTheNumbers() {
   return (
     <section className="relative overflow-hidden border-t border-white/5 bg-black py-24 lg:py-32">
       <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-[var(--ows-red)] to-transparent" />
-      <div className="mx-auto max-w-[1400px] px-6 lg:px-10">
+      <div className="mx-auto w-full max-w-[1920px] px-6 lg:px-10">
         <Reveal>
           <p className="text-[11px] font-bold uppercase tracking-[0.35em] text-[var(--ows-red)]">— OWS by the Numbers</p>
           <h2 className="mt-4 max-w-3xl font-display text-4xl font-black uppercase leading-[0.95] tracking-tight text-foreground md:text-6xl">
@@ -302,7 +308,7 @@ function ByTheNumbers() {
 function Industries() {
   return (
     <section className="relative overflow-hidden border-t border-white/5 bg-[var(--ows-panel)] py-24">
-      <div className="mx-auto max-w-[1400px] px-6 lg:px-10">
+      <div className="mx-auto w-full max-w-[1920px] px-6 lg:px-10">
         <Reveal>
           <p className="text-[11px] font-bold uppercase tracking-[0.35em] text-[var(--ows-red)]">— Industries We Serve</p>
         </Reveal>
@@ -324,7 +330,7 @@ function TrustedBy() {
   const items = [...TRUSTED_BY, ...TRUSTED_BY];
   return (
     <section className="relative overflow-hidden border-t border-white/5 bg-black py-20">
-      <div className="mx-auto max-w-[1400px] px-6 lg:px-10">
+      <div className="mx-auto w-full max-w-[1920px] px-6 lg:px-10">
         <p className="text-center text-[11px] font-bold uppercase tracking-[0.35em] text-foreground/40">
           Trusted by Government & Industry Leaders
         </p>
@@ -351,7 +357,7 @@ function ClosingCTA() {
   return (
     <section className="relative overflow-hidden border-t border-white/5 bg-black py-32">
       <div className="absolute inset-0 bg-radial-red opacity-40" />
-      <div className="relative mx-auto max-w-[1400px] px-6 text-center lg:px-10">
+      <div className="relative mx-auto w-full max-w-[1920px] px-6 text-center lg:px-10">
         <Reveal>
           <h2 className="mx-auto max-w-4xl font-display text-5xl font-black uppercase leading-[0.95] tracking-tight text-foreground md:text-7xl">
             Ready to build with <span className="text-[var(--ows-red)]">OWS</span>?

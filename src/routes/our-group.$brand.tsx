@@ -60,21 +60,27 @@ function BrandPage() {
             background: `radial-gradient(ellipse 60% 50% at 50% 100%, ${brand.color}33 0%, transparent 60%)`,
           }}
         />
-        <div className="relative mx-auto max-w-[1400px] px-6 lg:px-10">
+        <div className="relative mx-auto w-full max-w-[1920px] px-6 lg:px-10">
           <p
             className="text-[11px] font-bold uppercase tracking-[0.35em]"
             style={{ color: brand.color }}
           >
             — {brand.category}
           </p>
-          <motion.h1
+          <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
-            className="mt-6 max-w-5xl font-display text-5xl font-black uppercase leading-[0.95] tracking-tight text-foreground md:text-8xl lg:text-[8rem]"
+            className="mt-6 max-w-5xl"
           >
-            {brand.name}
-          </motion.h1>
+            {brand.logo ? (
+              <img src={brand.logo} alt={brand.name} className="h-20 md:h-32 lg:h-48 w-auto object-contain drop-shadow-xl" />
+            ) : (
+              <h1 className="font-display text-5xl font-black uppercase leading-[0.95] tracking-tight text-foreground md:text-8xl lg:text-[8rem]">
+                {brand.name}
+              </h1>
+            )}
+          </motion.div>
           <motion.p
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -89,7 +95,7 @@ function BrandPage() {
 
       {/* Description */}
       <section className="border-b border-white/5 bg-[var(--ows-panel)] py-20">
-        <div className="mx-auto grid max-w-[1400px] gap-12 px-6 lg:grid-cols-12 lg:px-10">
+        <div className="mx-auto grid w-full max-w-[1920px] gap-12 px-6 lg:grid-cols-12 lg:px-10">
           <Reveal className="lg:col-span-4">
             <p className="text-[11px] font-bold uppercase tracking-[0.35em] text-foreground/40">— Overview</p>
           </Reveal>
@@ -103,7 +109,7 @@ function BrandPage() {
 
       {/* Metrics */}
       <section className="border-b border-white/5 bg-black py-20">
-        <div className="mx-auto max-w-[1400px] px-6 lg:px-10">
+        <div className="mx-auto w-full max-w-[1920px] px-6 lg:px-10">
           <Stagger className="grid grid-cols-2 gap-px bg-white/5 lg:grid-cols-4">
             {brand.metrics.map((m) => (
               <StaggerItem key={m.label}>
@@ -126,7 +132,7 @@ function BrandPage() {
 
       {/* Services */}
       <section className="border-b border-white/5 bg-[var(--ows-panel)] py-24">
-        <div className="mx-auto max-w-[1400px] px-6 lg:px-10">
+        <div className="mx-auto w-full max-w-[1920px] px-6 lg:px-10">
           <Reveal>
             <p
               className="text-[11px] font-bold uppercase tracking-[0.35em]"
@@ -158,7 +164,7 @@ function BrandPage() {
 
       {/* Clients */}
       <section className="border-b border-white/5 bg-black py-24">
-        <div className="mx-auto max-w-[1400px] px-6 lg:px-10">
+        <div className="mx-auto w-full max-w-[1920px] px-6 lg:px-10">
           <Reveal>
             <p className="text-[11px] font-bold uppercase tracking-[0.35em] text-foreground/40">— Trusted By</p>
             <h2 className="mt-4 font-display text-3xl font-black uppercase leading-tight text-foreground md:text-5xl">
@@ -186,7 +192,7 @@ function BrandPage() {
           className="border-b border-white/5 py-24"
           style={{ background: `linear-gradient(180deg, ${brand.color}0d 0%, transparent 100%)` }}
         >
-          <div className="mx-auto max-w-[1400px] px-6 lg:px-10">
+          <div className="mx-auto w-full max-w-[1920px] px-6 lg:px-10">
             <Reveal>
               <p
                 className="text-[11px] font-bold uppercase tracking-[0.35em]"
@@ -213,7 +219,7 @@ function BrandPage() {
 
       {/* Next + CTA */}
       <section className="border-b border-white/5 bg-black py-20">
-        <div className="mx-auto grid max-w-[1400px] gap-8 px-6 lg:grid-cols-2 lg:px-10">
+        <div className="mx-auto grid w-full max-w-[1920px] gap-8 px-6 lg:grid-cols-2 lg:px-10">
           <Link
             to="/contact"
             className="group flex items-center justify-between border border-white/10 p-8 transition-all hover:border-[var(--ows-red)] hover:bg-[var(--ows-red)]/5 md:p-12"

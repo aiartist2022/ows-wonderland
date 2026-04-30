@@ -57,66 +57,75 @@ export function ContactForm({ sourcePage = "/contact" }: { sourcePage?: string }
   }
 
   return (
-    <form onSubmit={onSubmit} className="space-y-6">
-      <div className="grid gap-6 md:grid-cols-2">
-        <Field label="Full Name *" name="name" required maxLength={200} />
-        <Field label="Email *" name="email" type="email" required maxLength={320} />
-        <Field label="Company" name="company" maxLength={200} />
-        <Field label="Phone" name="phone" type="tel" maxLength={50} />
+    <form onSubmit={onSubmit} className="space-y-4">
+      <div className="grid gap-4 md:grid-cols-2">
+        <Field placeholder="First Name*" name="firstName" required maxLength={100} />
+        <Field placeholder="Last Name*" name="lastName" required maxLength={100} />
       </div>
+      <Field placeholder="Email Address*" name="email" type="email" required maxLength={320} />
+      <Field placeholder="Phone Number*" name="phone" type="tel" required maxLength={50} />
+      <Field placeholder="Company / Organization" name="company" maxLength={200} />
+      
       <div>
-        <label className="block text-[10px] font-bold uppercase tracking-[0.25em] text-foreground/50">
-          Your Message *
-        </label>
         <textarea
           name="message"
           required
           maxLength={5000}
-          rows={5}
-          placeholder="Tell us how we can help…"
-          className="mt-3 w-full border-b border-white/15 bg-transparent py-3 text-base text-foreground outline-none transition-colors placeholder:text-foreground/30 focus:border-[var(--ows-red)]"
+          rows={6}
+          placeholder="Your Message*"
+          className="w-full border border-white/20 bg-black/40 p-4 text-sm text-white outline-none transition-colors placeholder:text-foreground/40 focus:border-[var(--ows-red)] focus:bg-black resize-none"
         />
       </div>
+
+      <div className="flex items-center gap-3 pt-2 pb-4">
+        <input 
+          type="checkbox" 
+          id="privacy" 
+          required 
+          className="h-4 w-4 rounded-sm border-white/20 bg-transparent text-[var(--ows-red)] focus:ring-0 focus:ring-offset-0"
+        />
+        <label htmlFor="privacy" className="text-xs text-foreground/60">
+          I agree to the <a href="#" className="text-[var(--ows-red)] hover:underline">Privacy Policy</a> and consent to be contacted by OWS Holdings.
+        </label>
+      </div>
+
       {error && (
         <p className="text-sm text-[var(--ows-red)]">{error}</p>
       )}
+      
       <button
         type="submit"
         disabled={state === "submitting"}
-        className="group inline-flex items-center gap-3 bg-[var(--ows-red)] px-8 py-4 text-[12px] font-bold uppercase tracking-[0.25em] text-foreground transition-all hover:shadow-[0_0_40px_var(--ows-red-glow)] disabled:opacity-50"
+        className="group flex w-full md:w-auto items-center justify-center gap-3 bg-[var(--ows-red)] px-8 py-4 text-[12px] font-bold uppercase tracking-widest text-white transition-all hover:shadow-[0_0_20px_var(--ows-red-glow)] disabled:opacity-50"
       >
+        {state === "submitting" ? "SENDING..." : "SEND MESSAGE"}
         {state === "submitting" ? <Loader2 size={16} className="animate-spin" /> : <ArrowRight size={16} className="transition-transform group-hover:translate-x-1" />}
-        {state === "submitting" ? "Sending…" : "Send Message"}
       </button>
     </form>
   );
 }
 
 function Field({
-  label,
+  placeholder,
   name,
   type = "text",
   required = false,
   maxLength,
 }: {
-  label: string;
+  placeholder: string;
   name: string;
   type?: string;
   required?: boolean;
   maxLength?: number;
 }) {
   return (
-    <div>
-      <label className="block text-[10px] font-bold uppercase tracking-[0.25em] text-foreground/50">
-        {label}
-      </label>
-      <input
-        type={type}
-        name={name}
-        required={required}
-        maxLength={maxLength}
-        className="mt-3 w-full border-b border-white/15 bg-transparent py-3 text-base text-foreground outline-none transition-colors placeholder:text-foreground/30 focus:border-[var(--ows-red)]"
-      />
-    </div>
+    <input
+      type={type}
+      name={name}
+      required={required}
+      maxLength={maxLength}
+      placeholder={placeholder}
+      className="w-full border border-white/20 bg-black/40 p-4 text-sm text-white outline-none transition-colors placeholder:text-foreground/40 focus:border-[var(--ows-red)] focus:bg-black"
+    />
   );
 }
