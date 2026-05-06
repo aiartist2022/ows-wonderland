@@ -336,9 +336,11 @@ export const PILLARS = [
 export const INDUSTRIES = [
   "Automotive",
   "Defence & Government",
+  "Aerospace & Supply Chain",
   "Logistics & Transport",
   "Healthcare & Insurance",
   "Media & Entertainment",
+  "Education & Development",
   "Fitness & Wellness",
   "Facilities & Infrastructure",
 ];
@@ -356,11 +358,13 @@ export const TRUSTED_BY = [
   "Miral / Yas Island",
   "Sharjah Co-op Society",
   "AIMS Medical Group",
+  "Leonardo",
+  "Airbus",
 ];
 
 export const HEADLINE_METRICS = [
-  { value: "7", label: "Verticals" },
-  { value: "14", label: "Countries" },
-  { value: "3,000+", label: "Employees" },
+  { value: "9", label: "Verticals" },
+  { value: "20+", label: "Countries" },
+  { value: "3,750+", label: "Employees" },
   { value: "10,000+", label: "Wellness Members" },
 ];
