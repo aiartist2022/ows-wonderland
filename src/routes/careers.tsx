@@ -95,7 +95,7 @@ function CareersPage() {
               </h2>
               <p className="mt-3 text-sm text-foreground/70">
                 From automotive to events, media to wellness, insurance to defence — explore exciting career paths
-                across our seven business verticals.
+                across our nine business verticals.
               </p>
             </div>
             

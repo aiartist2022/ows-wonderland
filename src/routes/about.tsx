@@ -37,7 +37,7 @@ const JOURNEY = [
   { year: "1990+", title: "THE BEGINNING", body: "OWS Automotive is founded in the USA, starting a legacy of trust and performance." },
   { year: "2010+", title: "EXPANSION", body: "Regional growth across the Middle East with key government partnerships." },
   { year: "2020", title: "DIVERSIFICATION", body: "Launch of OWS Capital and expansion into new verticals that drive national impact." },
-  { year: "TODAY & BEYOND", title: "NINE CAPABILITIES", body: "Seven capabilities. Infinite value. Building the future, together." },
+  { year: "TODAY & BEYOND", title: "NINE CAPABILITIES", body: "Nine capabilities. Infinite value. Building the future, together." },
 ];
 
 function AboutPage() {
