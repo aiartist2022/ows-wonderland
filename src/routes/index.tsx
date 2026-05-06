@@ -4,7 +4,7 @@ import { useRef } from "react";
 import { ArrowRight, ArrowUpRight, Sparkles } from "lucide-react";
 import { SiteShell } from "@/components/site/SiteShell";
 import { Reveal, Stagger, StaggerItem } from "@/components/site/Motion";
-import { CircularGallery } from "@/components/ui/circular-gallery";
+import { BrandCarousel } from "@/components/ui/brand-carousel";
 import { BRANDS, PILLARS, INDUSTRIES, TRUSTED_BY, HEADLINE_METRICS } from "@/lib/brands";
 import skylineImg from "@/assets/hero-skyline.jpg";
 import umbrellaImg from "@/assets/hero-umbrella.png";
@@ -173,7 +173,7 @@ function CapabilityRail() {
         </div>
 
         <div className="mt-14">
-          <CircularGallery items={BRANDS} radius={520} autoRotateSpeed={0.05} />
+          <BrandCarousel brands={BRANDS} />
         </div>
       </div>
     </section>
