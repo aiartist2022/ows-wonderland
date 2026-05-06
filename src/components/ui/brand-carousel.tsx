@@ -72,9 +72,9 @@ export const BrandCarousel = React.forwardRef<HTMLDivElement, BrandCarouselProps
           {brands.map((brand) => (
             <Link
               key={brand.slug}
-              to="/our-group/$slug"
-              params={{ slug: brand.slug }}
-              className="group relative flex-shrink-0 snap-start w-[280px] sm:w-[320px] lg:w-[360px] overflow-hidden border border-white/10 bg-[var(--ows-panel)] transition-all duration-500 hover:border-[var(--ows-red)]"
+              to="/our-group/$brand"
+              params={{ brand: brand.slug }}
+              className="group relative w-[280px] flex-shrink-0 snap-start overflow-hidden border border-white/10 bg-[var(--ows-panel)] transition-all duration-500 hover:border-[var(--ows-red)] sm:w-[320px] lg:w-[360px]"
             >
               <div className="relative aspect-[4/5] overflow-hidden">
                 <img
