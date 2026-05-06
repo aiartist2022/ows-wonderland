@@ -158,7 +158,7 @@ function Hero() {
 
 function CapabilityRail() {
   return (
-    <section className="relative border-t border-white/5 bg-black py-24 lg:py-32">
+    <section className="relative border-t border-white/5 bg-black pt-12 pb-24 lg:pt-16 lg:pb-32">
       <div className="mx-auto w-full max-w-[1920px] px-6 lg:px-10">
         <div className="flex flex-col items-start justify-between gap-6 lg:flex-row lg:items-end">
           <div>
