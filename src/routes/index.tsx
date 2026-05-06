@@ -197,7 +197,11 @@ function CapabilityRail() {
                 <div className="relative flex h-full flex-col justify-between p-4 lg:p-5">
                   <div>
                     {brand.logo ? (
-                      <div className="flex h-16 w-32 lg:h-20 lg:w-40 items-center justify-start opacity-80 transition-opacity group-hover:opacity-100">
+                      <div className={
+                        brand.slug === "aj-insurance-broker" || brand.slug === "platform-health-club"
+                          ? "flex h-24 w-44 lg:h-28 lg:w-52 items-center justify-start opacity-80 transition-opacity group-hover:opacity-100"
+                          : "flex h-16 w-32 lg:h-20 lg:w-40 items-center justify-start opacity-80 transition-opacity group-hover:opacity-100"
+                      }>
                         <img src={brand.logo} alt={brand.name} className="max-h-full max-w-full object-contain object-left" />
                       </div>
                     ) : (
