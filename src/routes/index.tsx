@@ -4,6 +4,7 @@ import { useRef } from "react";
 import { ArrowRight, ArrowUpRight, Sparkles } from "lucide-react";
 import { SiteShell } from "@/components/site/SiteShell";
 import { Reveal, Stagger, StaggerItem } from "@/components/site/Motion";
+import { CircularGallery } from "@/components/ui/circular-gallery";
 import { BRANDS, PILLARS, INDUSTRIES, TRUSTED_BY, HEADLINE_METRICS } from "@/lib/brands";
 import skylineImg from "@/assets/hero-skyline.jpg";
 import umbrellaImg from "@/assets/hero-umbrella.png";
@@ -171,66 +172,8 @@ function CapabilityRail() {
           </Link>
         </div>
 
-        <div className="mt-14 grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3">
-          {BRANDS.map((brand, i) => (
-            <motion.div
-              key={brand.slug}
-              initial={{ opacity: 0, y: 40 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-80px" }}
-              transition={{ duration: 0.7, delay: i * 0.06, ease: [0.16, 1, 0.3, 1] }}
-              whileHover={{ y: -8 }}
-              className="group relative aspect-[4/5] overflow-hidden border border-white/5 bg-black"
-            >
-              <Link to="/our-group/$brand" params={{ brand: brand.slug }} className="absolute inset-0">
-                <img
-                  src={brand.image}
-                  alt={brand.name}
-                  loading="lazy"
-                  className="absolute inset-0 h-full w-full object-cover opacity-50 grayscale transition-all duration-700 group-hover:scale-110 group-hover:opacity-90 group-hover:grayscale-0"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-transparent" />
-                <div
-                  className="absolute inset-x-0 bottom-0 h-1 transition-all duration-500 group-hover:h-2"
-                  style={{ backgroundColor: brand.color }}
-                />
-                <div className="relative flex h-full flex-col justify-between p-4 lg:p-5">
-                  <div>
-                    {brand.logo ? (
-                      <div className={
-                        brand.slug === "aj-insurance-broker" || brand.slug === "platform-health-club"
-                          ? "flex h-24 w-44 lg:h-28 lg:w-52 items-center justify-start opacity-80 transition-opacity group-hover:opacity-100"
-                          : "flex h-16 w-32 lg:h-20 lg:w-40 items-center justify-start opacity-80 transition-opacity group-hover:opacity-100"
-                      }>
-                        <img src={brand.logo} alt={brand.name} className="max-h-full max-w-full object-contain object-left" />
-                      </div>
-                    ) : (
-                      <span
-                        className="font-display text-5xl font-black"
-                        style={{ color: brand.color }}
-                      >
-                        {brand.short}
-                      </span>
-                    )}
-                  </div>
-                  <div>
-                    <p
-                      className="text-[8px] font-bold uppercase tracking-[0.18em] opacity-80"
-                      style={{ color: brand.color }}
-                    >
-                      {brand.category.split(" & ")[0]}
-                    </p>
-                    <h3 className="mt-2 font-display text-base font-bold leading-tight text-foreground">
-                      {brand.name}
-                    </h3>
-                    <p className="mt-2 text-[10px] uppercase tracking-[0.15em] text-foreground/60">
-                      {brand.tagline}
-                    </p>
-                  </div>
-                </div>
-              </Link>
-            </motion.div>
-          ))}
+        <div className="mt-14">
+          <CircularGallery items={BRANDS} radius={520} autoRotateSpeed={0.05} />
         </div>
       </div>
     </section>
