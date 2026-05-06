@@ -5,6 +5,8 @@ import meltLive from "@/assets/brand-melt-live.jpg";
 import meltMedia from "@/assets/brand-melt-media.jpg";
 import platform from "@/assets/brand-platform.jpg";
 import handy from "@/assets/brand-handy.jpg";
+import ala from "@/assets/brand-ala.jpg";
+import meltEdu from "@/assets/brand-melt-education.jpg";
 
 import logoAjIndustries from "@/assets/logo-aj-industries.png";
 import logoHandyBunch from "@/assets/logo-handy-bunch.jpg";
@@ -13,6 +15,8 @@ import logoAjibInsurance from "@/assets/logo-ajib-insurance.png";
 import logoMeltLive from "@/assets/logo-melt-live.png";
 import logoMeltMedia from "@/assets/logo-melt-media.png";
 import logoPlatformHealth from "@/assets/logo-platform-health.png";
+import logoAlaCorporation from "@/assets/logo-ala-corporation.png";
+import logoMeltEducation from "@/assets/logo-melt-education.png";
 
 export type BrandSlug =
   | "ows-automotive"
@@ -21,7 +25,9 @@ export type BrandSlug =
   | "melt-live"
   | "melt-media"
   | "platform-health-club"
-  | "handy-bunch";
+  | "handy-bunch"
+  | "ala-corporation"
+  | "melt-education";
 
 export interface Brand {
   slug: BrandSlug;
