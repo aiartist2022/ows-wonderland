@@ -60,7 +60,7 @@ function CapabilitiesPage() {
             <div className="mx-auto mt-4 h-px w-24 bg-[var(--ows-red)]" />
           </Reveal>
 
-          <Stagger className="mt-16 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          <Stagger className="mt-16 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {BRANDS.map((brand, i) => (
               <StaggerItem key={brand.slug} className={i >= 4 ? "lg:col-span-1" : ""}>
                 <div className="group relative flex h-full flex-col overflow-hidden border border-white/10 bg-black transition-all hover:border-[var(--ows-red)]">
