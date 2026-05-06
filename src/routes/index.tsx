@@ -180,7 +180,7 @@ function CapabilityRail() {
               viewport={{ once: true, margin: "-80px" }}
               transition={{ duration: 0.7, delay: i * 0.06, ease: [0.16, 1, 0.3, 1] }}
               whileHover={{ y: -8 }}
-              className="group relative aspect-[4/5] sm:aspect-[3/4] lg:aspect-[3/5] overflow-hidden border border-white/5 bg-black"
+              className="group relative aspect-[4/5] overflow-hidden border border-white/5 bg-black"
             >
               <Link to="/our-group/$brand" params={{ brand: brand.slug }} className="absolute inset-0">
                 <img
