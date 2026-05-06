@@ -91,7 +91,7 @@ function Hero() {
       {/* Content */}
       <motion.div
         style={reduce ? undefined : { y: titleY }}
-        className="relative z-20 mx-auto flex min-h-screen w-full max-w-[1920px] flex-col justify-end px-6 pb-24 pt-40 lg:px-10 lg:pb-32"
+        className="relative z-20 mx-auto flex min-h-screen w-full max-w-[1920px] flex-col justify-end px-6 pb-12 pt-40 lg:px-10 lg:pb-16"
       >
         <motion.p
           initial={{ opacity: 0, y: 20 }}
@@ -158,7 +158,7 @@ function Hero() {
 
 function CapabilityRail() {
   return (
-    <section className="relative border-t border-white/5 bg-black py-24 lg:py-32">
+    <section className="relative border-t border-white/5 bg-black pt-12 pb-24 lg:pt-16 lg:pb-32">
       <div className="mx-auto w-full max-w-[1920px] px-6 lg:px-10">
         <div className="flex flex-col items-start justify-between gap-6 lg:flex-row lg:items-end">
           <div>
