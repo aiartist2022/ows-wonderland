@@ -91,7 +91,7 @@ function Hero() {
       {/* Content */}
       <motion.div
         style={reduce ? undefined : { y: titleY }}
-        className="relative z-20 mx-auto flex min-h-screen w-full max-w-[1920px] flex-col justify-end px-6 pb-24 pt-40 lg:px-10 lg:pb-32"
+        className="relative z-20 mx-auto flex min-h-screen w-full max-w-[1920px] flex-col justify-end px-6 pb-12 pt-40 lg:px-10 lg:pb-16"
       >
         <motion.p
           initial={{ opacity: 0, y: 20 }}
