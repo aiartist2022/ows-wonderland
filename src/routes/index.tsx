@@ -109,7 +109,7 @@ function Hero() {
         >
           One Group.
           <br />
-          Seven Capabilities.
+          Nine Capabilities.
           <br />
           <span className="text-[var(--ows-red)] text-glow-red">Infinite Value.</span>
         </motion.h1>
@@ -121,7 +121,7 @@ function Hero() {
           className="mt-8 max-w-2xl text-lg text-foreground/70 md:text-xl"
         >
           A global, multi-vertical group headquartered in Sharjah — spanning automotive, defence,
-          insurance, media, events, wellness and facility management.
+          aerospace, insurance, media, events, education, wellness and facility management.
         </motion.p>
 
         <motion.div
