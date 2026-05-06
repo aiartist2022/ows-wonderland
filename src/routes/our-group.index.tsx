@@ -64,7 +64,7 @@ function OurGroupPage() {
                 <Link
                   to="/our-group/$brand"
                   params={{ brand: brand.slug }}
-                  className="group relative block aspect-video overflow-hidden bg-black border border-white/10 hover:border-white/30 transition-all duration-500"
+                  className="group relative block aspect-[4/5] overflow-hidden bg-black border border-white/10 hover:border-white/30 transition-all duration-500"
                 >
                   <img
                     src={brand.image}
