@@ -11,7 +11,7 @@ export const Route = createFileRoute("/careers")({
       { title: "Careers — Build Your Career at OWS Holdings" },
       { name: "description", content: "Join one of MENA's most integrated multi-vertical groups. Open roles across automotive, defence, insurance, media, events, wellness and facilities." },
       { property: "og:title", content: "Careers at OWS Holdings" },
-      { property: "og:description", content: "Build a career across seven world-class businesses." },
+      { property: "og:description", content: "Build a career across nine world-class businesses." },
     ],
   }),
   component: CareersPage,
@@ -90,12 +90,12 @@ function CareersPage() {
           <div className="flex flex-col gap-8 md:flex-row md:items-center md:justify-between border border-white/10 p-6 md:p-8 rounded-sm bg-white/5">
             <div className="max-w-md">
               <h2 className="font-display text-xl font-black uppercase text-white tracking-tight">
-                ONE GROUP. SEVEN CAPABILITIES.<br />
+                ONE GROUP. NINE CAPABILITIES.<br />
                 <span className="text-[var(--ows-red)]">INFINITE POSSIBILITIES.</span>
               </h2>
               <p className="mt-3 text-sm text-foreground/70">
                 From automotive to events, media to wellness, insurance to defence — explore exciting career paths
-                across our seven business verticals.
+                across our nine business verticals.
               </p>
             </div>
             

@@ -11,14 +11,14 @@ import umbrellaImg from "@/assets/hero-umbrella.png";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "OWS Holdings — One Group. Seven Capabilities. Infinite Value." },
+      { title: "OWS Holdings — One Group. Nine Capabilities. Infinite Value." },
       {
         name: "description",
         content:
-          "Global multi-vertical group across automotive, defence, insurance, media, events, wellness and facility management. Headquartered in Sharjah, UAE.",
+          "Global multi-vertical group across automotive, defence, aerospace, insurance, media, events, education, wellness and facility management. Headquartered in Sharjah, UAE.",
       },
-      { property: "og:title", content: "OWS Holdings — One Group. Seven Capabilities." },
-      { property: "og:description", content: "Trusted partner to UAE government and global brands across seven verticals." },
+      { property: "og:title", content: "OWS Holdings — One Group. Nine Capabilities." },
+      { property: "og:description", content: "Trusted partner to UAE government and global brands across nine verticals." },
     ],
   }),
   component: HomePage,
@@ -109,7 +109,7 @@ function Hero() {
         >
           One Group.
           <br />
-          Seven Capabilities.
+          Nine Capabilities.
           <br />
           <span className="text-[var(--ows-red)] text-glow-red">Infinite Value.</span>
         </motion.h1>
@@ -121,7 +121,7 @@ function Hero() {
           className="mt-8 max-w-2xl text-lg text-foreground/70 md:text-xl"
         >
           A global, multi-vertical group headquartered in Sharjah — spanning automotive, defence,
-          insurance, media, events, wellness and facility management.
+          aerospace, insurance, media, events, education, wellness and facility management.
         </motion.p>
 
         <motion.div
@@ -163,7 +163,7 @@ function CapabilityRail() {
           <div>
             <p className="text-[11px] font-bold uppercase tracking-[0.35em] text-[var(--ows-red)]">— Our Capabilities</p>
             <h2 className="mt-4 max-w-3xl font-display text-4xl font-black uppercase leading-[0.95] tracking-tight text-foreground md:text-6xl">
-              Seven businesses.<br /> One unstoppable group.
+              Nine businesses.<br /> One unstoppable group.
             </h2>
           </div>
           <Link to="/our-group" className="group inline-flex items-center gap-2 text-[11px] font-semibold uppercase tracking-[0.25em] text-foreground/70 hover:text-[var(--ows-red)]">
@@ -171,7 +171,7 @@ function CapabilityRail() {
           </Link>
         </div>
 
-        <div className="mt-14 grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-7">
+        <div className="mt-14 grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3">
           {BRANDS.map((brand, i) => (
             <motion.div
               key={brand.slug}
@@ -180,7 +180,7 @@ function CapabilityRail() {
               viewport={{ once: true, margin: "-80px" }}
               transition={{ duration: 0.7, delay: i * 0.06, ease: [0.16, 1, 0.3, 1] }}
               whileHover={{ y: -8 }}
-              className="group relative aspect-[4/5] sm:aspect-[3/4] lg:aspect-[3/5] overflow-hidden border border-white/5 bg-black"
+              className="group relative aspect-[4/5] overflow-hidden border border-white/5 bg-black"
             >
               <Link to="/our-group/$brand" params={{ brand: brand.slug }} className="absolute inset-0">
                 <img
