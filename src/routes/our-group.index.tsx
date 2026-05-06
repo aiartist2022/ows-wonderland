@@ -59,12 +59,12 @@ function OurGroupPage() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-80px" }}
                 transition={{ duration: 0.7, delay: (i % 2) * 0.1, ease: [0.16, 1, 0.3, 1] }}
-                className={i === BRANDS.length - 1 && BRANDS.length % 2 !== 0 ? "md:col-span-2" : ""}
+                className={i === BRANDS.length - 1 && BRANDS.length % 2 !== 0 ? "md:col-span-2 lg:col-span-1" : ""}
               >
                 <Link
                   to="/our-group/$brand"
                   params={{ brand: brand.slug }}
-                  className="group relative block aspect-video overflow-hidden bg-black border border-white/10 hover:border-white/30 transition-all duration-500"
+                  className="group relative block aspect-[4/5] overflow-hidden bg-black border border-white/10 hover:border-white/30 transition-all duration-500"
                 >
                   <img
                     src={brand.image}
