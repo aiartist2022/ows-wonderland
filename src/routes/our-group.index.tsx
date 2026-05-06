@@ -51,7 +51,7 @@ function OurGroupPage() {
             <div className="mx-auto mt-4 mb-16 h-px w-24 bg-[var(--ows-red)]" />
           </Reveal>
 
-          <div className="grid gap-6 md:grid-cols-2">
+          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             {BRANDS.map((brand, i) => (
               <motion.div
                 key={brand.slug}
