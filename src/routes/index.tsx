@@ -163,7 +163,7 @@ function CapabilityRail() {
           <div>
             <p className="text-[11px] font-bold uppercase tracking-[0.35em] text-[var(--ows-red)]">— Our Capabilities</p>
             <h2 className="mt-4 max-w-3xl font-display text-4xl font-black uppercase leading-[0.95] tracking-tight text-foreground md:text-6xl">
-              Seven businesses.<br /> One unstoppable group.
+              Nine businesses.<br /> One unstoppable group.
             </h2>
           </div>
           <Link to="/our-group" className="group inline-flex items-center gap-2 text-[11px] font-semibold uppercase tracking-[0.25em] text-foreground/70 hover:text-[var(--ows-red)]">
@@ -171,7 +171,7 @@ function CapabilityRail() {
           </Link>
         </div>
 
-        <div className="mt-14 grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-7">
+        <div className="mt-14 grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3">
           {BRANDS.map((brand, i) => (
             <motion.div
               key={brand.slug}
