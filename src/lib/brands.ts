@@ -247,6 +247,67 @@ export const BRANDS: Brand[] = [
       "Services AJ Industries facilities",
     ],
   },
+  {
+    slug: "ala-corporation",
+    name: "ALA Corporation",
+    short: "ALA",
+    tagline: "Supply Chain. Engineered.",
+    category: "AEROSPACE & DEFENCE SUPPLY CHAIN",
+    color: "#F5C518",
+    image: ala,
+    logo: logoAlaCorporation,
+    description:
+      "A global supply chain integrator to Aerospace, Defence, Rail and High-Tech industries. Headquartered in Naples and Milan, Italy — 35+ years of expertise across 10 countries and 20 locations.",
+    services: [
+      "Supply Chain Integration",
+      "Lean Logistics (JIT, DLF, Kitting)",
+      "Stocking Distribution",
+      "Defence MRO & Interconnection",
+      "Wiring Harnesses (SCP SINTERSA)",
+      "EN 9120 Certified Quality",
+    ],
+    clients: ["Leonardo", "Airbus", "Boeing", "Defence Primes", "Rail OEMs", "High-Tech Industries"],
+    metrics: [
+      { value: "35+", label: "Years Experience" },
+      { value: "750+", label: "Employees" },
+      { value: "10", label: "Countries" },
+      { value: "200K+", label: "SKUs Managed" },
+    ],
+    synergy: [
+      "Anchors UAE/MENA aerospace partnership with OWS",
+      "Feeds AJ Industries defence supply chain",
+    ],
+  },
+  {
+    slug: "melt-education",
+    name: "Melt Education",
+    short: "ME",
+    tagline: "Preparing Students for a Global World.",
+    category: "EDUCATION & STUDENT DEVELOPMENT",
+    color: "#7C5CFF",
+    image: meltEdu,
+    logo: logoMeltEducation,
+    description:
+      "A Steve Harvey company equipping institutions with the systems to build student character, activate real-world learning, and immerse students in new cultures through whole-student development, immersive homestays and study-abroad readiness.",
+    services: [
+      "Whole-Student Development (Inspo)",
+      "Immersive Homestays (SRS)",
+      "Study Abroad Readiness (StayPrep)",
+      "Workshops & Camps",
+      "Ongoing Programs",
+      "Institutional Partnerships",
+    ],
+    clients: ["Schools & Universities", "Host Families", "Cultural Partners", "Global Institutions"],
+    metrics: [
+      { value: "100%", label: "Compliant Homestays" },
+      { value: "CPA", label: "Audited" },
+      { value: "Global", label: "Footprint" },
+    ],
+    synergy: [
+      "Shared Steve Harvey Global leadership with Melt Live & Melt Media",
+      "Cultural exchange tie-ins with MENA tourism programmes",
+    ],
+  },
 ];
 
 export const PILLARS = [
