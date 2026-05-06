@@ -10,10 +10,10 @@ import groupHeroImg from "@/assets/group-hero.png";
 export const Route = createFileRoute("/our-group/")({
   head: () => ({
     meta: [
-      { title: "Our Group — Seven Businesses, One Vision | OWS Holdings" },
-      { name: "description", content: "Explore the seven businesses of OWS Holdings: OWS Automotive, AJ Industries, AJ Insurance, Melt Live, Melt Media, Platform Health Club and Handy Bunch." },
+      { title: "Our Group — Nine Businesses, One Vision | OWS Holdings" },
+      { name: "description", content: "Explore the nine businesses of OWS Holdings: OWS Automotive, AJ Industries, AJ Insurance, Melt Live, Melt Media, Platform Health Club and Handy Bunch." },
       { property: "og:title", content: "Our Group — OWS Holdings" },
-      { property: "og:description", content: "Seven specialised businesses operating as one integrated group." },
+      { property: "og:description", content: "Nine specialised businesses operating as one integrated group." },
     ],
   }),
   component: OurGroupPage,
@@ -30,7 +30,7 @@ function OurGroupPage() {
   return (
     <SiteShell>
       <RedesignHero
-        title={<>SEVEN BUSINESSES.<br /></>}
+        title={<>NINE BUSINESSES.<br /></>}
         highlight="ONE VISION."
         image={groupHeroImg}
       >
@@ -136,7 +136,7 @@ function OurGroupPage() {
               </h2>
             </div>
             <div className="max-w-md text-sm text-foreground/60 md:text-center">
-              Learn how our seven businesses work together to provide end-to-end solutions for our partners.
+              Learn how our nine businesses work together to provide end-to-end solutions for our partners.
             </div>
             <Link to="/capabilities" className="border border-[var(--ows-red)] px-8 py-4 text-[11px] font-bold uppercase tracking-widest text-[var(--ows-red)] transition-all hover:bg-[var(--ows-red)] hover:text-white">
               VIEW CAPABILITIES →

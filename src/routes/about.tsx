@@ -37,7 +37,7 @@ const JOURNEY = [
   { year: "1990+", title: "THE BEGINNING", body: "OWS Automotive is founded in the USA, starting a legacy of trust and performance." },
   { year: "2010+", title: "EXPANSION", body: "Regional growth across the Middle East with key government partnerships." },
   { year: "2020", title: "DIVERSIFICATION", body: "Launch of OWS Capital and expansion into new verticals that drive national impact." },
-  { year: "TODAY & BEYOND", title: "SEVEN CAPABILITIES", body: "Seven capabilities. Infinite value. Building the future, together." },
+  { year: "TODAY & BEYOND", title: "NINE CAPABILITIES", body: "Seven capabilities. Infinite value. Building the future, together." },
 ];
 
 function AboutPage() {
@@ -45,7 +45,7 @@ function AboutPage() {
     <SiteShell>
       <RedesignHero
         title={<>ABOUT <br />OWS HOLDINGS</>}
-        subtitle="One Group. Seven Capabilities. Infinite Value."
+        subtitle="One Group. Nine Capabilities. Infinite Value."
       >
         <p className="mt-4 max-w-2xl text-base text-foreground/70 md:text-lg">
           OWS Holdings is a UAE-based diversified group united by a single purpose — to deliver integrated

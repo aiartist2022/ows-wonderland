@@ -9,10 +9,10 @@ import capabilitiesHeroImg from "@/assets/capabilities-hero.png";
 export const Route = createFileRoute("/capabilities")({
   head: () => ({
     meta: [
-      { title: "Capabilities — Seven Verticals, One Group | OWS Holdings" },
-      { name: "description", content: "Discover the seven core capabilities of OWS Holdings — automotive, defence, insurance, media, events, wellness and facility management." },
+      { title: "Capabilities — Nine Verticals, One Group | OWS Holdings" },
+      { name: "description", content: "Discover the nine core capabilities of OWS Holdings — automotive, defence, insurance, media, events, wellness and facility management." },
       { property: "og:title", content: "Capabilities — OWS Holdings" },
-      { property: "og:description", content: "Cross-vertical synergy across seven specialised businesses." },
+      { property: "og:description", content: "Cross-vertical synergy across nine specialised businesses." },
     ],
   }),
   component: CapabilitiesPage,
@@ -43,19 +43,19 @@ function CapabilitiesPage() {
         image={capabilitiesHeroImg}
       >
         <p className="mt-6 max-w-2xl text-lg text-foreground/80 md:text-xl">
-          Seven industry-leading capabilities working in synergy to deliver integrated solutions that drive
+          Nine industry-leading capabilities working in synergy to deliver integrated solutions that drive
           efficiency, growth and long-term value across the UAE, MENA and beyond.
         </p>
       </RedesignHero>
 
       <StatRow stats={HERO_STATS} />
 
-      {/* Seven Capabilities Grid */}
+      {/* Nine Capabilities Grid */}
       <section className="bg-black py-24 border-b border-white/5">
         <div className="mx-auto w-full max-w-[1920px] px-6 lg:px-10">
           <Reveal>
             <h2 className="text-center font-display text-2xl font-black uppercase tracking-[0.2em] text-white">
-              THE SEVEN CAPABILITIES
+              THE NINE CAPABILITIES
             </h2>
             <div className="mx-auto mt-4 h-px w-24 bg-[var(--ows-red)]" />
           </Reveal>
@@ -172,7 +172,7 @@ function CapabilitiesPage() {
             <div>
               <h2 className="font-display text-2xl md:text-3xl font-black uppercase leading-tight text-white">
                 ONE GROUP.<br />
-                SEVEN CAPABILITIES.<br />
+                NINE CAPABILITIES.<br />
                 <span className="text-[var(--ows-red)]">INFINITE VALUE.</span>
               </h2>
             </div>

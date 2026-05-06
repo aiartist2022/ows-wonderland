@@ -35,7 +35,7 @@ export function SiteFooter() {
             </div>
 
             <p className="mt-6 max-w-xs text-sm leading-relaxed text-foreground/60">
-              One Group. Seven Capabilities. <span className="text-[var(--ows-red)]">Infinite Value.</span>
+              One Group. Nine Capabilities. <span className="text-[var(--ows-red)]">Infinite Value.</span>
             </p>
           </div>
 

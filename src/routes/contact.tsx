@@ -11,7 +11,7 @@ export const Route = createFileRoute("/contact")({
       { title: "Contact OWS Holdings — Start the Conversation" },
       { name: "description", content: "Get in touch with OWS Holdings. Headquartered in Sharjah with operations across 14 countries." },
       { property: "og:title", content: "Contact OWS Holdings" },
-      { property: "og:description", content: "One conversation can unlock seven specialised businesses." },
+      { property: "og:description", content: "One conversation can unlock nine specialised businesses." },
     ],
   }),
   component: ContactPage,
@@ -177,7 +177,7 @@ function ContactPage() {
               CONNECT WITH US
             </p>
             <p className="text-sm text-foreground/60 ml-12">
-              Stay updated with the latest news, events and insights from across our seven verticals.
+              Stay updated with the latest news, events and insights from across our nine verticals.
             </p>
           </div>
           <div className="flex gap-4">
@@ -197,7 +197,7 @@ function ContactPage() {
             <div>
               <h2 className="font-display text-2xl md:text-3xl font-black uppercase leading-tight text-white">
                 ONE GROUP.<br />
-                SEVEN CAPABILITIES.<br />
+                NINE CAPABILITIES.<br />
                 <span className="text-[var(--ows-red)]">INFINITE VALUE.</span>
               </h2>
             </div>
