@@ -43,6 +43,7 @@ export interface Brand {
   clients: string[];
   metrics: { label: string; value: string }[];
   synergy: string[];
+  pastEvents?: { name: string; description: string }[];
 }
 
 export const BRANDS: Brand[] = [
