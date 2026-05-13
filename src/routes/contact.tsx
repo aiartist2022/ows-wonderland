@@ -144,16 +144,19 @@ function ContactPage() {
             </p>
           </Reveal>
 
-          <Stagger className="grid grid-cols-2 gap-4 md:grid-cols-5">
+          <Stagger className="grid grid-cols-2 gap-3 sm:grid-cols-4 md:grid-cols-8">
             {OFFICES.map((office, i) => (
               <StaggerItem key={i}>
-                <div className="group border border-white/10 bg-black p-6 flex flex-col items-center justify-between aspect-[4/5] transition-colors hover:border-[var(--ows-red)]">
-                  <div className="text-center mt-4">
-                    <h3 className="font-display text-lg font-bold text-[var(--ows-red)] tracking-widest">{office.city}</h3>
-                    <p className="text-[10px] font-semibold text-white tracking-widest mt-1">{office.country}</p>
-                  </div>
-                  <div className="w-full mt-8 opacity-70 group-hover:opacity-100 transition-opacity">
-                    <img src={office.image} alt="" className="w-full h-auto object-contain" />
+                <div className="group relative overflow-hidden border border-white/10 bg-black aspect-[3/4] transition-colors hover:border-[var(--ows-red)]">
+                  <img
+                    src={office.image}
+                    alt={`${office.city} skyline`}
+                    className="absolute inset-0 h-full w-full object-cover opacity-70 transition-transform duration-700 ease-out group-hover:scale-110 group-hover:opacity-100"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-black/40" />
+                  <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-2">
+                    <h3 className="font-display text-lg font-bold text-[var(--ows-red)] tracking-widest drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)]">{office.city}</h3>
+                    <p className="text-[10px] font-semibold text-white tracking-widest mt-1 drop-shadow-[0_2px_6px_rgba(0,0,0,0.8)]">{office.country}</p>
                   </div>
                 </div>
               </StaggerItem>
