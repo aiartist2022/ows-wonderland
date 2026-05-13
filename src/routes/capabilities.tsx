@@ -83,7 +83,7 @@ function CapabilitiesPage() {
                       <div className="text-center">
                         {brand.logo ? (
                           <div className={`flex items-center justify-center mx-auto ${
-                            ["aj-industries", "aj-insurance-broker", "platform-health-club"].includes(brand.slug)
+                            ["aj-industries", "aj-insurance-broker", "platform-health-club", "handy-bunch", "melt-education"].includes(brand.slug)
                               ? "h-24 w-56"
                               : "h-12 w-32"
                           }`}>
