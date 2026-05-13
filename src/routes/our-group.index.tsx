@@ -30,7 +30,7 @@ function OurGroupPage() {
   return (
     <SiteShell>
       <RedesignHero
-        title={<>NINE BUSINESSES<br /></>}
+        title="NINE BUSINESSES"
         highlight="ONE VISION"
         image={groupHeroImg}
       >
