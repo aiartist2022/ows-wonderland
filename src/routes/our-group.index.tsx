@@ -87,7 +87,7 @@ function OurGroupPage() {
                   <div className="relative flex h-full flex-col justify-between p-8 md:p-12">
                     <div className="flex items-start justify-between">
                       {brand.logo ? (
-                        <div className={`flex items-start justify-start opacity-80 drop-shadow-2xl transition-opacity group-hover:opacity-100 ${brand.slug === "platform-health-club" ? "h-32 w-56 md:h-40 md:w-80" : "h-20 w-40 md:h-24 md:w-64"}`}>
+                        <div className={`flex h-20 md:h-24 items-start justify-start opacity-80 drop-shadow-2xl transition-opacity group-hover:opacity-100 ${brand.slug === "platform-health-club" ? "w-56 md:w-80" : "w-40 md:w-64"}`}>
                           <img src={brand.logo} alt={brand.name} className="max-h-full max-w-full object-contain object-left" />
                         </div>
                       ) : (
