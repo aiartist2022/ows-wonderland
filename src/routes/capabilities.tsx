@@ -38,7 +38,7 @@ function CapabilitiesPage() {
   return (
     <SiteShell>
       <RedesignHero
-        title={<>OUR CAPABILITIES<br /></>}
+        title="OUR CAPABILITIES"
         highlight="INFINITE IMPACT"
         image={capabilitiesHeroImg}
       >
