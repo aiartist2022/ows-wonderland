@@ -207,7 +207,7 @@ export const BRANDS: Brand[] = [
     short: "P",
     tagline: "Premium Wellness. Built for Performance",
     category: "PREMIUM GYM & WELLNESS",
-    color: "#4ADE80",
+    color: "#a3d392",
     image: platform,
     logo: logoPlatformHealth,
     description:
