@@ -95,7 +95,7 @@ function OurGroupPage() {
                           className="font-display text-5xl md:text-7xl font-black drop-shadow-2xl opacity-80 group-hover:opacity-100 transition-opacity"
                           style={{ color: brand.color }}
                         >
-                          {brand.short}
+                          {brand.name}
                         </span>
                       )}
                       <ArrowUpRight

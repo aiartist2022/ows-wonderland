@@ -131,7 +131,7 @@ const CircularGallery = React.forwardRef<HTMLDivElement, CircularGalleryProps>(
                           className="font-display text-4xl font-black"
                           style={{ color: item.color }}
                         >
-                          {item.short}
+                          {item.name}
                         </span>
                       )}
                     </div>
