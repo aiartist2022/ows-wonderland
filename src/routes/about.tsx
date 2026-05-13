@@ -58,10 +58,10 @@ function AboutPage() {
       {/* Founder Section */}
       <section className="relative border-b border-white/5 bg-black py-24">
         <div className="mx-auto w-full max-w-[1920px] px-6 lg:px-10">
-          <div className="grid items-center gap-16 lg:grid-cols-2">
-            <Reveal className="relative">
+          <div className="grid items-stretch gap-16 lg:grid-cols-2">
+            <Reveal className="relative h-full min-h-[500px]">
               <div className="absolute -inset-4 rounded-full bg-radial-red opacity-30 mix-blend-screen blur-3xl" />
-              <div className="relative aspect-[3/4] overflow-hidden border border-white/10 bg-white/5 grayscale">
+              <div className="relative h-full w-full overflow-hidden border border-white/10 bg-white/5 grayscale">
                 <img src={oweisZahranImg} alt="Oweis Zahran" className="h-full w-full object-cover object-top opacity-80" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent" />
               </div>
