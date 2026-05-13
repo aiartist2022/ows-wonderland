@@ -8,6 +8,7 @@ import hqMap from "@/assets/hq-map.png";
 import officeSkyline from "@/assets/office-skyline.png";
 import officeSharjah from "@/assets/office-sharjah.png";
 import officeAbuDhabi from "@/assets/office-abudhabi.png";
+import officeAjman from "@/assets/office-ajman.png";
 
 export const Route = createFileRoute("/contact")({
   head: () => ({
@@ -25,7 +26,7 @@ const OFFICES = [
   { city: "DUBAI", country: "UAE", image: officeSkyline },
   { city: "SHARJAH", country: "UAE", image: officeSharjah },
   { city: "ABU DHABI", country: "UAE", image: officeAbuDhabi },
-  { city: "AJMAN", country: "UAE", image: officeSkyline },
+  { city: "AJMAN", country: "UAE", image: officeAjman },
   { city: "DOHA", country: "QATAR", image: officeSkyline },
   { city: "RIYADH", country: "KSA", image: officeSkyline },
   { city: "BAHRAIN", country: "BAHRAIN", image: officeSkyline },
