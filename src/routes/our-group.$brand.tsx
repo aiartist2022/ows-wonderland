@@ -101,7 +101,7 @@ function BrandPage() {
             <p className="text-[11px] font-bold uppercase tracking-[0.35em] text-foreground/40">— Overview</p>
           </Reveal>
           <Reveal className="lg:col-span-8">
-            <p className="font-display text-2xl font-medium leading-snug text-foreground md:text-3xl">
+            <p className="whitespace-pre-line font-display text-2xl font-medium leading-snug text-foreground md:text-3xl">
               {brand.description}
             </p>
           </Reveal>
