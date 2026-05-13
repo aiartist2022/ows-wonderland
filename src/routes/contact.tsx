@@ -5,6 +5,7 @@ import { Reveal, Stagger, StaggerItem } from "@/components/site/Motion";
 import { ContactForm } from "@/components/site/ContactForm";
 import { RedesignHero } from "@/components/site/Redesign";
 import hqMap from "@/assets/hq-map.png";
+import officeSkyline from "@/assets/office-skyline.png";
 
 export const Route = createFileRoute("/contact")({
   head: () => ({
@@ -144,11 +145,8 @@ function ContactPage() {
                     <h3 className="font-display text-lg font-bold text-[var(--ows-red)] tracking-widest">{office.city}</h3>
                     <p className="text-[10px] font-semibold text-white tracking-widest mt-1">{office.country}</p>
                   </div>
-                  {/* Mock Skyline Outline */}
-                  <div className="w-full mt-8 opacity-40 group-hover:opacity-100 transition-opacity">
-                    <svg viewBox="0 0 100 40" fill="none" stroke="currentColor" strokeWidth="1" className="w-full text-white">
-                      <path d="M0 40 L10 40 L10 20 L20 20 L20 10 L25 10 L25 25 L35 25 L35 15 L40 15 L40 5 L50 5 L50 30 L60 30 L60 18 L70 18 L70 28 L80 28 L80 12 L90 12 L90 40 Z" strokeLinejoin="round" />
-                    </svg>
+                  <div className="w-full mt-8 opacity-70 group-hover:opacity-100 transition-opacity">
+                    <img src={officeSkyline} alt="" className="w-full h-auto object-contain" />
                   </div>
                 </div>
               </StaggerItem>
