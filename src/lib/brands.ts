@@ -21,7 +21,7 @@ import logoMeltEducation from "@/assets/logo-melt-education.png";
 export type BrandSlug =
   | "ows-automotive"
   | "aj-industries"
-  | "aj-insurance-broker"
+  | "ajib"
   | "melt-live"
   | "melt-media"
   | "platform-health-club"
