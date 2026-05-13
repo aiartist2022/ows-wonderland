@@ -141,7 +141,7 @@ function BrandPage() {
               — What We Do
             </p>
             <h2 className="mt-4 max-w-3xl font-display text-4xl font-black uppercase leading-[0.95] tracking-tight text-foreground md:text-6xl">
-              Services & capabilities.
+              Services & capabilities
             </h2>
           </Reveal>
           <Stagger className="mt-14 grid gap-px bg-white/5 md:grid-cols-2 lg:grid-cols-3">
@@ -168,7 +168,7 @@ function BrandPage() {
           <Reveal>
             <p className="text-[11px] font-bold uppercase tracking-[0.35em] text-foreground/40">— Trusted By</p>
             <h2 className="mt-4 font-display text-3xl font-black uppercase leading-tight text-foreground md:text-5xl">
-              Selected clients.
+              Selected clients
             </h2>
           </Reveal>
           <Stagger className="mt-12 flex flex-wrap gap-3">
@@ -201,7 +201,7 @@ function BrandPage() {
                 — Cross-Vertical Synergy
               </p>
               <h2 className="mt-4 max-w-3xl font-display text-3xl font-black uppercase leading-tight text-foreground md:text-5xl">
-                How {brand.short} powers the rest of the group.
+                How {brand.short} powers the rest of the group
               </h2>
             </Reveal>
             <Stagger className="mt-12 grid gap-6 md:grid-cols-2">

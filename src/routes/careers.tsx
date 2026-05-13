@@ -47,8 +47,8 @@ function CareersPage() {
   return (
     <SiteShell>
       <RedesignHero
-        title={<>BUILD YOUR CAREER.<br /></>}
-        highlight="BUILD THE FUTURE."
+        title={<>BUILD YOUR CAREER<br /></>}
+        highlight="BUILD THE FUTURE"
         image="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=2000&auto=format&fit=crop"
       >
         <p className="mt-4 max-w-2xl text-base text-foreground/80 md:text-xl font-bold">

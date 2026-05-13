@@ -29,7 +29,7 @@ function ContactPage() {
   return (
     <SiteShell>
       <RedesignHero
-        title={<>LET'S BUILD <br /> <span className="text-[var(--ows-red)]">SOMETHING GREAT.</span></>}
+        title={<>LET'S BUILD <br /> <span className="text-[var(--ows-red)]">SOMETHING GREAT</span></>}
       >
         <p className="mt-4 max-w-xl text-lg text-white font-medium leading-relaxed">
           We're here to listen, collaborate and create value together.
