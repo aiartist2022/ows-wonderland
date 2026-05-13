@@ -46,6 +46,7 @@ function BrandPage() {
 
   return (
     <SiteShell>
+      <div key={brand.slug}>
       {/* Hero */}
       <section className="relative overflow-hidden border-b border-white/5 pt-32 pb-20 md:pt-40 md:pb-28">
         <img
@@ -258,6 +259,7 @@ function BrandPage() {
           </Link>
         </div>
       </section>
+      </div>
     </SiteShell>
   );
 }
