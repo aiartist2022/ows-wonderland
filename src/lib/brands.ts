@@ -302,7 +302,7 @@ export const BRANDS: Brand[] = [
     short: "ME",
     tagline: "Shaping the Future of Global Education",
     category: "EDUCATION & STUDENT DEVELOPMENT",
-    color: "#7C5CFF",
+    color: "#FFFFFF",
     image: meltEdu,
     logo: logoMeltEducation,
     description:
