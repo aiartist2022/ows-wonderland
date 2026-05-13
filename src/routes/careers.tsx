@@ -192,12 +192,12 @@ function CareersPage() {
         </div>
       </section>
 
-      {/* Life at OWS */}
+      {/* THE OWS EXPERIENCE */}
       <section className="bg-[var(--ows-panel)] py-24 border-b border-white/5">
         <div className="mx-auto w-full max-w-[1920px] px-6 lg:px-10">
           <Reveal>
             <h2 className="text-center font-display text-2xl font-black uppercase tracking-[0.2em] text-white">
-              LIFE AT OWS
+              THE OWS EXPERIENCE
             </h2>
             <div className="mx-auto mt-4 h-px w-24 bg-[var(--ows-red)]" />
           </Reveal>
