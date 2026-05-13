@@ -64,7 +64,7 @@ export const BRANDS: Brand[] = [
       "Fleet Maintenance Services",
       "Smart Fleet Telematics Solutions",
     ],
-    clients: ["Dubai Taxi Company", "RTA", "Government of Ajman", "Tawazun", "Rafid", "Etimad Auto"],
+    clients: ["Dubai Taxi Company", "RTA — Roads & Transport Authority", "Government of Ajman", "Tawazun", "Rafid", "Etimad Auto"],
     metrics: [
       { value: "30+", label: "Years Established" },
       { value: "AED 1B+", label: "Govt Savings" },
