@@ -350,23 +350,23 @@ export const BRANDS: Brand[] = [
 export const PILLARS = [
   {
     title: "Single-Relationship Simplicity",
-    body: "One trusted partner across automotive, insurance, media, events, wellness and FM — reducing procurement complexity.",
+    body: "One trusted partner across automotive, insurance, media, events, wellness, and facility management — reducing procurement complexity and consolidating vendor relationships.",
   },
   {
     title: "Government-Grade Trust",
-    body: "Proven track record with UAE government entities — RTA, Government of Ajman, Tourism Departments, transport authorities.",
+    body: "A proven track record with UAE government entities including RTA, Government of Ajman, Tourism Departments, and transport authorities — delivering at the standard public-sector mandates demand.",
   },
   {
     title: "Integrated Cross-Vertical Value",
-    body: "Every business unit creates introductions for the others — a fleet contract unlocks insurance, media, wellness and facilities.",
+    body: "Every business unit creates introductions for the others. A fleet contract unlocks insurance, media, wellness, and facilities — compounding value from a single relationship.",
   },
   {
     title: "Regional MENA Reach",
-    body: "Deep presence across Dubai, Sharjah, Abu Dhabi and Ajman; regional networks in Qatar, Bahrain and beyond.",
+    body: "Deep operational presence across Dubai, Sharjah, Abu Dhabi, and Ajman, with regional networks extending into Qatar, Bahrain, KSA, and beyond.",
   },
   {
     title: "Innovation-Led Delivery",
-    body: "Technology, talent and creativity driving smarter, faster and future-ready solutions.",
+    body: "Technology, talent, and creativity driving smarter, faster, and future-ready solutions across every vertical.",
   },
 ];
 
