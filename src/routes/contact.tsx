@@ -121,7 +121,6 @@ function ContactPage() {
                   </div>
                 </div>
               </div>
-              </div>
             </div>
           </Reveal>
         </div>
