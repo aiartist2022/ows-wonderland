@@ -77,7 +77,7 @@ export function StatRow({ stats }: { stats: { icon: ReactNode; value: string; la
   return (
     <section className="relative border-b border-white/5 bg-[var(--ows-panel)]">
       <div className="mx-auto w-full max-w-[1920px]">
-        <div className="grid grid-cols-2 divide-x divide-y divide-white/5 md:grid-cols-4 md:divide-y-0">
+        <div className={`grid grid-cols-2 divide-x divide-y divide-white/5 md:divide-y-0 ${stats.length === 5 ? "md:grid-cols-5" : stats.length === 3 ? "md:grid-cols-3" : "md:grid-cols-4"}`}>
           {stats.map((stat, i) => (
             <motion.div
               key={i}
