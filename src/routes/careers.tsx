@@ -4,6 +4,11 @@ import { SiteShell } from "@/components/site/SiteShell";
 import { Reveal, Stagger, StaggerItem } from "@/components/site/Motion";
 import { motion } from "framer-motion";
 import { RedesignHero, StatRow, IconCard } from "@/components/site/Redesign";
+import lifeDefenceSummit from "@/assets/life-defence-summit.jpg";
+import lifeLeadersSummit from "@/assets/life-leaders-summit.jpg";
+import lifeKarwaMotors from "@/assets/life-karwa-motors.jpg";
+import lifeMowasalat from "@/assets/life-mowasalat.jpg";
+import lifeGlobalLeaders from "@/assets/life-global-leaders.jpg";
 
 export const Route = createFileRoute("/careers")({
   head: () => ({
