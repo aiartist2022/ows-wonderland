@@ -5,9 +5,32 @@ import { ArrowRight, ArrowUpRight, Sparkles } from "lucide-react";
 import { SiteShell } from "@/components/site/SiteShell";
 import { Reveal, Stagger, StaggerItem } from "@/components/site/Motion";
 import { BrandCarousel } from "@/components/ui/brand-carousel";
-import { BRANDS, PILLARS, INDUSTRIES, TRUSTED_BY, HEADLINE_METRICS } from "@/lib/brands";
+import { BRANDS, PILLARS, INDUSTRIES, HEADLINE_METRICS } from "@/lib/brands";
 import skylineImg from "@/assets/hero-skyline.jpg";
 import umbrellaImg from "@/assets/hero-umbrella.png";
+import partnerRta from "@/assets/partners/rta.png";
+import partnerDtc from "@/assets/partners/dtc.png";
+import partnerTawazun from "@/assets/partners/tawazun.png";
+import partnerUaeArmedForces from "@/assets/partners/uae-armed-forces.png";
+import partnerEtisalat from "@/assets/partners/etisalat.png";
+import partnerVisitQatar from "@/assets/partners/visit-qatar.png";
+import partnerSharjahCoop from "@/assets/partners/sharjah-coop.png";
+import partnerAims from "@/assets/partners/aims.png";
+import partnerLeonardo from "@/assets/partners/leonardo.png";
+import partnerAirbus from "@/assets/partners/airbus.png";
+
+const PARTNER_LOGOS = [
+  { src: partnerRta, alt: "RTA — Roads & Transport Authority" },
+  { src: partnerDtc, alt: "Dubai Taxi Company" },
+  { src: partnerTawazun, alt: "Tawazun" },
+  { src: partnerUaeArmedForces, alt: "UAE Armed Forces" },
+  { src: partnerEtisalat, alt: "Etisalat by e&" },
+  { src: partnerVisitQatar, alt: "Visit Qatar" },
+  { src: partnerSharjahCoop, alt: "Sharjah Co-operative Society" },
+  { src: partnerAims, alt: "AIMS Medical Group" },
+  { src: partnerLeonardo, alt: "Leonardo" },
+  { src: partnerAirbus, alt: "Airbus" },
+];
 
 export const Route = createFileRoute("/")({
   head: () => ({
