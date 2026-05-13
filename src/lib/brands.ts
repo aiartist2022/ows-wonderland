@@ -148,7 +148,7 @@ export const BRANDS: Brand[] = [
     image: meltLive,
     logo: logoMeltLive,
     description:
-      "Melt Live is the events and live entertainment arm of MELT Global — a cultural platform co-founded by Oweis Zahran and Steve Harvey in 2021, bridging Eastern and Western creative economies through original IP, live events, and media. Melt Live helps brands, institutions, and governments create events, festivals, and campaigns that generate real cultural value — not just visibility. MELT operates at the intersection of culture, commerce, and creative strategy, combining original IP development, media production, and tailored education into a single, integrated platform. Steve Harvey serves as Chairman, bringing global reach, cultural credibility, and decades of experience in media and live entertainment.",
+      "Melt Live is the events and live entertainment arm of MELT Global — a cultural platform co-founded by Oweis Zahran and Steve Harvey in 2021, bridging Eastern and Western creative economies through original IP, live events, and media. Melt Live helps brands, institutions, and governments create events, festivals, and campaigns that generate real cultural value, not just visibility.\n\nMELT operates at the intersection of culture, commerce, and creative strategy, combining original IP development, media production, and tailored education into a single, integrated platform. Steve Harvey serves as Chairman, bringing global reach, cultural credibility, and decades of experience in media and live entertainment.",
     services: [
       "Original IP Festivals (FuelFest Arabia, Open Fire Food Festival)",
       "Celebrity Events & Golf Classics",
