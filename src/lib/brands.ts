@@ -243,7 +243,6 @@ export const BRANDS: Brand[] = [
       { value: "5", label: "Open Locations" },
       { value: "50,000+", label: "Clients Served" },
       { value: "50+", label: "Trainers" },
-      { value: "24/7", label: "Select Locations" },
     ],
     synergy: [
       "Facility operations and maintenance delivered by Handy Bunch across all locations",
