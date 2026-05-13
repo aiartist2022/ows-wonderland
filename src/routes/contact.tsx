@@ -144,7 +144,7 @@ function ContactPage() {
             </p>
           </Reveal>
 
-          <Stagger className="grid grid-cols-2 gap-3 sm:grid-cols-4 md:grid-cols-8">
+          <Stagger className="grid grid-cols-2 gap-3 sm:grid-cols-4 lg:grid-cols-8">
             {OFFICES.map((office, i) => (
               <StaggerItem key={i}>
                 <div className="group relative overflow-hidden border border-white/10 bg-black aspect-[3/4] transition-colors hover:border-[var(--ows-red)]">
