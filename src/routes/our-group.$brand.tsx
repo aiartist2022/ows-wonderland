@@ -75,7 +75,7 @@ function BrandPage() {
             className="mt-6 max-w-5xl"
           >
             {brand.logo ? (
-              <img src={brand.logo} alt={brand.name} className={`${brand.slug === "ala-corporation" ? "h-12 md:h-20 lg:h-28" : "h-20 md:h-32 lg:h-44"} w-auto object-contain drop-shadow-xl`} />
+              <img src={brand.logo} alt={brand.name} className={`${brand.slug === "ala-corporation" || brand.slug === "ows-automotive" ? "h-12 md:h-20 lg:h-28" : "h-20 md:h-32 lg:h-44"} w-auto object-contain drop-shadow-xl`} />)
             ) : (
               <h1 className="font-display text-5xl font-black uppercase leading-[0.95] tracking-tight text-foreground md:text-8xl lg:text-[8rem]">
                 {brand.name}
