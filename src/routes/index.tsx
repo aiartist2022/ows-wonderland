@@ -59,12 +59,55 @@ function HomePage() {
     <SiteShell>
       <Hero />
       <CapabilityRail />
-      <Pillars />
+      <GroupOverview />
       <ByTheNumbers />
+      <Pillars />
       <Industries />
       <TrustedBy />
       <ClosingCTA />
     </SiteShell>
+  );
+}
+
+function GroupOverview() {
+  return (
+    <section className="relative overflow-hidden border-t border-white/5 bg-black py-24 lg:py-32">
+      <div className="absolute inset-0 bg-grid opacity-20" />
+      <div
+        className="pointer-events-none absolute inset-0 opacity-50"
+        style={{
+          background:
+            "radial-gradient(ellipse 70% 60% at 50% 0%, rgba(225,29,46,0.18) 0%, transparent 65%)",
+        }}
+      />
+      <div className="relative mx-auto w-full max-w-[1920px] px-6 lg:px-10">
+        <div className="grid gap-12 lg:grid-cols-12 lg:gap-16">
+          <Reveal className="lg:col-span-5">
+            <p className="text-[11px] font-bold uppercase tracking-[0.35em] text-[var(--ows-red)]">
+              — The Group
+            </p>
+            <h2 className="mt-4 font-display text-4xl font-black uppercase leading-[0.95] tracking-tight text-foreground md:text-6xl lg:text-7xl">
+              One Group.
+              <br />
+              Nine Capabilities.
+              <br />
+              <span className="text-[var(--ows-red)]">Infinite Value.</span>
+            </h2>
+          </Reveal>
+          <Reveal className="lg:col-span-7" delay={0.1}>
+            <p className="font-display text-xl font-medium leading-snug text-foreground/85 md:text-2xl lg:text-3xl">
+              OWS Holdings is a global, multi-vertical group headquartered in the UAE — spanning
+              automotive, defence, aerospace, insurance, media, events, education, wellness, and
+              facility management.
+            </p>
+            <p className="mt-6 max-w-2xl text-base text-foreground/65 md:text-lg">
+              Each business unit is a category leader. Together, they form an integrated ecosystem
+              that delivers compounding value across the MENA region and beyond.
+            </p>
+          </Reveal>
+        </div>
+      </div>
+    </section>
   );
 }
 
