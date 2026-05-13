@@ -4,6 +4,7 @@ import { SiteShell } from "@/components/site/SiteShell";
 import { Reveal, Stagger, StaggerItem } from "@/components/site/Motion";
 import { ContactForm } from "@/components/site/ContactForm";
 import { RedesignHero } from "@/components/site/Redesign";
+import hqMap from "@/assets/hq-map.png";
 
 export const Route = createFileRoute("/contact")({
   head: () => ({
@@ -86,15 +87,12 @@ function ContactPage() {
                 OUR HEADQUARTERS
               </p>
               
-              <div className="relative w-full aspect-[16/9] mb-8 overflow-hidden bg-white/5 border border-white/10 group">
-                {/* Mocking a map with a cool dark pattern */}
-                <div className="absolute inset-0 bg-grid opacity-20" />
-                <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
-                  <div className="relative">
-                    <MapPin size={48} className="text-[var(--ows-red)] drop-shadow-[0_0_15px_var(--ows-red)]" />
-                    <div className="absolute -bottom-2 left-1/2 w-8 h-2 -translate-x-1/2 rounded-[100%] bg-[var(--ows-red)]/30 blur-sm" />
-                  </div>
-                </div>
+              <div className="relative w-full aspect-[16/9] mb-8 overflow-hidden bg-white/5 border border-white/10">
+                <img
+                  src={hqMap}
+                  alt="Map showing AJ Industries LLC headquarters in Al Jurf Industrial 3, Ajman"
+                  className="absolute inset-0 h-full w-full object-cover"
+                />
               </div>
 
               <div className="mt-auto">
@@ -121,18 +119,6 @@ function ContactPage() {
                     <Clock size={18} className="text-[var(--ows-red)]" />
                     <span className="text-sm text-foreground/80">Sunday - Thursday: 8:00 AM - 6:00 PM (GST)</span>
                   </div>
-                </div>
-
-                <div className="mt-8 h-64 w-full rounded-xl overflow-hidden border border-white/10 opacity-80 transition-opacity hover:opacity-100">
-                  <iframe 
-                    src="https://maps.google.com/maps?q=AJ%20Industries%20LLC,%20Al%20Jurf%20Industrial%203,%20Ajman&t=m&z=14&ie=UTF8&iwloc=&output=embed" 
-                    width="100%" 
-                    height="100%" 
-                    style={{ border: 0, filter: 'grayscale(1) invert(1) contrast(1.2) hue-rotate(180deg)' }} 
-                    allowFullScreen 
-                    loading="lazy" 
-                    referrerPolicy="no-referrer-when-downgrade"
-                  ></iframe>
                 </div>
               </div>
             </div>
