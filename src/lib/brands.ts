@@ -56,7 +56,7 @@ export const BRANDS: Brand[] = [
     image: automotive,
     logo: logoOwsAutomotive,
     description:
-      "Founded in the United States three decades ago, OWS Automotive is a leading global provider of end-to-end fleet automotive services. Headquartered in the UAE with operations across multiple countries, it combines advanced quality engineering with sustainable remanufacturing — delivering AED 1B+ in proven savings to the UAE Government.",
+      "Founded in the United States three decades ago, OWS Automotive is a leading global provider of end-to-end fleet automotive services. While the company initially offered a broad range of services, today its primary focus is on delivering sustainable solutions to government and corporate fleets. Headquartered in the UAE with operations across multiple countries, OWS Automotive combines advanced quality engineering with sustainable remanufacturing processes to set new standards for environmental responsibility and technological innovation. OWS Automotive has a proven track record with savings to the UAE Government of greater than AED 1 Billion, a significant portfolio of satisfied clients, direct relationships with tier-one automotive suppliers, and serves as an exclusive maintenance supplier to government departments.",
     services: [
       "First Response & Roadside Assistance",
       "OEM Parts Remanufacturing",
