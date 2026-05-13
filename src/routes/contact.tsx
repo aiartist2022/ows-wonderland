@@ -6,6 +6,7 @@ import { ContactForm } from "@/components/site/ContactForm";
 import { RedesignHero } from "@/components/site/Redesign";
 import hqMap from "@/assets/hq-map.png";
 import officeSkyline from "@/assets/office-skyline.png";
+import officeSharjah from "@/assets/office-sharjah.png";
 
 export const Route = createFileRoute("/contact")({
   head: () => ({
@@ -20,14 +21,14 @@ export const Route = createFileRoute("/contact")({
 });
 
 const OFFICES = [
-  { city: "DUBAI", country: "UAE" },
-  { city: "SHARJAH", country: "UAE" },
-  { city: "ABU DHABI", country: "UAE" },
-  { city: "AJMAN", country: "UAE" },
-  { city: "DOHA", country: "QATAR" },
-  { city: "RIYADH", country: "KSA" },
-  { city: "BAHRAIN", country: "BAHRAIN" },
-  { city: "ATLANTA", country: "USA" },
+  { city: "DUBAI", country: "UAE", image: officeSkyline },
+  { city: "SHARJAH", country: "UAE", image: officeSharjah },
+  { city: "ABU DHABI", country: "UAE", image: officeSkyline },
+  { city: "AJMAN", country: "UAE", image: officeSkyline },
+  { city: "DOHA", country: "QATAR", image: officeSkyline },
+  { city: "RIYADH", country: "KSA", image: officeSkyline },
+  { city: "BAHRAIN", country: "BAHRAIN", image: officeSkyline },
+  { city: "ATLANTA", country: "USA", image: officeSkyline },
 ];
 
 function ContactPage() {
@@ -146,7 +147,7 @@ function ContactPage() {
                     <p className="text-[10px] font-semibold text-white tracking-widest mt-1">{office.country}</p>
                   </div>
                   <div className="w-full mt-8 opacity-70 group-hover:opacity-100 transition-opacity">
-                    <img src={officeSkyline} alt="" className="w-full h-auto object-contain" />
+                    <img src={office.image} alt="" className="w-full h-auto object-contain" />
                   </div>
                 </div>
               </StaggerItem>
