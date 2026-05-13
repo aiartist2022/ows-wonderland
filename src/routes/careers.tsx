@@ -104,7 +104,7 @@ function CareersPage() {
               {[
                 { name: "OWS Automotive", color: "#E11D2E" },
                 { name: "AJ Industries", color: "#C9A24A" },
-                { name: "AJ Insurance", color: "#4A7BD8" },
+                { name: "AJIB", color: "#4A7BD8" },
                 { name: "Melt Live", color: "#B14CFF" },
                 { name: "Melt Media", color: "#2DD4D4" },
                 { name: "Platform", color: "#4ADE80" },

@@ -11,7 +11,7 @@ export const Route = createFileRoute("/our-group/")({
   head: () => ({
     meta: [
       { title: "Our Group — Nine Businesses, One Vision | OWS Holdings" },
-      { name: "description", content: "Explore the nine businesses of OWS Holdings: OWS Automotive, AJ Industries, AJ Insurance, Melt Live, Melt Media, Platform Health Club and Handy Bunch." },
+      { name: "description", content: "Explore the nine businesses of OWS Holdings: OWS Automotive, AJ Industries, AJIB, Melt Live, Melt Media, Platform Health Club, Handy Bunch, ALA Corporation and Melt Education." },
       { property: "og:title", content: "Our Group — OWS Holdings" },
       { property: "og:description", content: "Nine specialised businesses operating as one integrated group." },
     ],
