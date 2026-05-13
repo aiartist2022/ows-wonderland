@@ -317,16 +317,16 @@ function TrustedBy() {
           Trusted by Government & Industry Leaders
         </p>
       </div>
-      <div className="relative mt-12 md:overflow-hidden">
-        <div className="pointer-events-none absolute inset-y-0 left-0 z-10 hidden w-32 bg-gradient-to-r from-black to-transparent md:block" />
-        <div className="pointer-events-none absolute inset-y-0 right-0 z-10 hidden w-32 bg-gradient-to-l from-black to-transparent md:block" />
-        <div className="flex items-center gap-12 overflow-x-auto px-6 [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden snap-x snap-mandatory md:marquee md:gap-20 md:overflow-visible md:px-0 md:snap-none whitespace-nowrap touch-pan-x">
+      <div className="group relative mt-12 overflow-hidden">
+        <div className="pointer-events-none absolute inset-y-0 left-0 z-10 w-16 bg-gradient-to-r from-black to-transparent md:w-32" />
+        <div className="pointer-events-none absolute inset-y-0 right-0 z-10 w-16 bg-gradient-to-l from-black to-transparent md:w-32" />
+        <div className="marquee flex items-center gap-12 whitespace-nowrap touch-pan-x [animation-play-state:running] hover:[animation-play-state:paused] active:[animation-play-state:paused] md:gap-20">
           {items.map((logo, i) => (
             <img
               key={i}
               src={logo.src}
               alt={logo.alt}
-              className="h-20 w-auto max-w-[220px] flex-shrink-0 snap-center object-contain opacity-80 transition-opacity hover:opacity-100 md:h-28 md:max-w-[280px] md:opacity-70"
+              className="h-20 w-auto max-w-[220px] flex-shrink-0 object-contain opacity-80 transition-opacity hover:opacity-100 md:h-28 md:max-w-[280px] md:opacity-70"
               loading="lazy"
               draggable={false}
             />
