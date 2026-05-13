@@ -4,6 +4,11 @@ import { SiteShell } from "@/components/site/SiteShell";
 import { Reveal, Stagger, StaggerItem } from "@/components/site/Motion";
 import { motion } from "framer-motion";
 import { RedesignHero, StatRow, IconCard } from "@/components/site/Redesign";
+import lifeDefenceSummit from "@/assets/life-defence-summit.jpg";
+import lifeLeadersSummit from "@/assets/life-leaders-summit.jpg";
+import lifeKarwaMotors from "@/assets/life-karwa-motors.jpg";
+import lifeMowasalat from "@/assets/life-mowasalat.jpg";
+import lifeGlobalLeaders from "@/assets/life-global-leaders.jpg";
 
 export const Route = createFileRoute("/careers")({
   head: () => ({
@@ -199,18 +204,18 @@ function CareersPage() {
 
           <div className="mt-16 grid grid-cols-2 md:grid-cols-5 gap-4">
             {[
-              "COLLABORATIVE TEAMS",
-              "INNOVATIVE ENVIRONMENT",
-              "WELLNESS FIRST",
-              "RECOGNITION & CELEBRATION",
-              "BEYOND WORK"
-            ].map((label, i) => (
+              { label: "GLOBAL DEFENCE PARTNERSHIPS", img: lifeDefenceSummit },
+              { label: "INTERNATIONAL LEADERSHIP STAGES", img: lifeLeadersSummit },
+              { label: "CROSS-BORDER CLIENT ENGAGEMENT", img: lifeKarwaMotors },
+              { label: "REGIONAL ALLIANCES & DELEGATIONS", img: lifeMowasalat },
+              { label: "WORLD-CLASS NETWORKING", img: lifeGlobalLeaders },
+            ].map((item, i) => (
               <Reveal key={i} delay={i * 0.1}>
                 <div className="group relative aspect-[4/5] overflow-hidden bg-white/5">
-                  <img src={`https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=800&auto=format&fit=crop&sig=${i}`} alt={label} className="w-full h-full object-cover opacity-60 transition-transform duration-700 group-hover:scale-110 group-hover:opacity-100 grayscale group-hover:grayscale-0" />
+                  <img src={item.img} alt={item.label} className="w-full h-full object-cover opacity-80 transition-transform duration-700 group-hover:scale-110 group-hover:opacity-100" />
                   <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black to-transparent p-4">
                     <p className="text-[10px] font-bold uppercase tracking-widest text-white text-center">
-                      {label}
+                      {item.label}
                     </p>
                   </div>
                 </div>
