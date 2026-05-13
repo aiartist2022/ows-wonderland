@@ -49,27 +49,6 @@ function ContactPage() {
         <p className="mt-2 max-w-xl text-lg text-white font-medium leading-relaxed">
           Reach out to our team — we'd love to hear from you.
         </p>
-        
-        <div className="mt-10 space-y-6">
-          <div className="flex items-center gap-4">
-            <Mail size={20} className="text-[var(--ows-red)]" />
-            <a href="mailto:info@owsholdings.com" className="text-white hover:text-[var(--ows-red)] transition-colors">
-              info@owsholdings.com
-            </a>
-          </div>
-          <div className="flex items-center gap-4">
-            <Phone size={20} className="text-[var(--ows-red)]" />
-            <span className="text-white">+971 6 572 5000</span>
-          </div>
-          <div className="flex items-start gap-4">
-            <MapPin size={20} className="mt-1 text-[var(--ows-red)]" />
-            <span className="text-white">
-              OWS Headquarters<br />
-              Al Jurf Industrial 3<br />
-              Ajman, UAE
-            </span>
-          </div>
-        </div>
       </RedesignHero>
 
       {/* Main Content Area */}
