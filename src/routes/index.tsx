@@ -326,7 +326,7 @@ function TrustedBy() {
               key={i}
               src={logo.src}
               alt={logo.alt}
-              className="h-16 w-auto max-w-[200px] flex-shrink-0 object-contain opacity-70 transition-opacity hover:opacity-100 md:h-20"
+              className="h-24 w-auto max-w-[280px] flex-shrink-0 object-contain opacity-70 transition-opacity hover:opacity-100 md:h-28"
               loading="lazy"
             />
           ))}
