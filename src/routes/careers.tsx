@@ -36,7 +36,7 @@ const WHY_JOIN = [
 const ROLES = [
   { dept: "OWS Automotive", title: "Fleet Workshop Manager", location: "Sharjah, UAE", type: "Operations", time: "Full-time" },
   { dept: "AJ Industries", title: "Spare Parts Procurement Specialist", location: "Sharjah, UAE", type: "Supply Chain", time: "Full-time" },
-  { dept: "AJ Insurance Broker", title: "Insurance Account Executive", location: "Dubai, UAE", type: "Sales", time: "Full-time" },
+  { dept: "AJIB", title: "Insurance Account Executive", location: "Dubai, UAE", type: "Sales", time: "Full-time" },
   { dept: "Melt Media", title: "Digital Campaign Manager", location: "Dubai, UAE", type: "Marketing", time: "Full-time" },
   { dept: "Melt Live", title: "Events Operations Executive", location: "Abu Dhabi, UAE", type: "Operations", time: "Full-time" },
   { dept: "Platform Health Club", title: "Fitness Coach", location: "Sharjah, UAE", type: "Fitness", time: "Full-time" },
