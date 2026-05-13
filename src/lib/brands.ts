@@ -107,16 +107,16 @@ export const BRANDS: Brand[] = [
     ],
   },
   {
-    slug: "aj-insurance-broker",
+    slug: "ajib",
     name: "AJIB",
     short: "AJIB",
-    tagline: "Trusted Cover. Compliance First",
+    tagline: "Trusted Cover. Compliance First.",
     category: "MOTOR, MEDICAL & LIABILITY BROKERAGE",
     color: "#4A7BD8",
     image: insurance,
     logo: logoAjibInsurance,
     description:
-      "AJIB is a UAE-based insurance brokerage delivering innovative, genuine insurance solutions across motor, medical, liability, cyber and aviation lines. Built around fraud minimisation and exceeding UAE regulatory standards, AJIB serves corporate fleets, SMEs, and individuals with tailored risk-management solutions and end-to-end claims support.",
+      "AJIB is a UAE-based insurance brokerage delivering innovative, genuine insurance solutions across motor, medical, liability, cyber, and aviation lines. Built around fraud minimisation and exceeding UAE regulatory standards, AJIB serves corporate fleets, SMEs, and individuals with tailored risk-management solutions and end-to-end claims support.",
     services: [
       "Motor & Fleet Insurance",
       "Group Medical Insurance",
