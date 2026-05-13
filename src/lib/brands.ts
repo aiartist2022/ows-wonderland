@@ -86,13 +86,13 @@ export const BRANDS: Brand[] = [
     image: industries,
     logo: logoAjIndustries,
     description:
-      "Established in 2018, AJ Industries is a joint venture between AJ Holding LLC and OWS Automotive — partnering with top-tier international firms to deliver spare parts and MRO services to the GHQ — UAE Armed Forces and government entities. Together, they have delivered AED 500M+ in proven savings to the UAE Government.",
+      "Established in 2018, AJ Industries is a joint venture between AJ Holding LLC and OWS Automotive, created to pioneer in the automotive and defence segment. The company partners with top-tier international firms to deliver spare parts and MRO services to the GHQ — UAE Armed Forces and government entities. AJ Holding LLC is a highly regarded organisation based in Ajman, UAE, established in 2000, which owns and operates a diverse range of strategically positioned subsidiaries. OWS brings an innovative approach combining sustainable remanufacturing with advanced quality engineering. Together, they have delivered proven savings of more than AED 500 million to the UAE Government.",
     services: [
       "Military Spare Parts Supply",
       "MRO for Wheeled & Tracked Vehicles",
       "Fleet Workshop Development & Advisory",
       "International OEM Partnerships",
-      "Strategic JV with Etimad / Al Fahad for UAE Armed Forces Support",
+      "Strategic JV with Etimad / Al Fahad in Abu Dhabi for UAE Armed Forces support",
     ],
     clients: ["UAE Armed Forces (GHQ)", "Tawazun", "Etimad / Al Fahad", "UAE Government Entities"],
     metrics: [
