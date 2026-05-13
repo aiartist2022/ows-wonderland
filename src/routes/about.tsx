@@ -2,7 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { SiteShell } from "@/components/site/SiteShell";
 import { Reveal, Stagger, StaggerItem } from "@/components/site/Motion";
 import { RedesignHero, StatRow, IconCard } from "@/components/site/Redesign";
-import { Briefcase, Users, Layers, Handshake, Globe, ShieldCheck, Share2, Lightbulb, Target } from "lucide-react";
+import { Briefcase, Users, Layers, Handshake, Globe, ShieldCheck, Share2, Lightbulb, Target, Rocket } from "lucide-react";
 import oweisZahranImg from "@/assets/oweis-zahran.jpg";
 
 export const Route = createFileRoute("/about")({
@@ -156,7 +156,7 @@ function AboutPage() {
               {JOURNEY.map((item, i) => (
                 <Reveal key={i} delay={i * 0.15} className="relative flex flex-col items-start md:items-center md:text-center">
                   <div className="z-10 mb-6 flex h-[60px] w-[60px] items-center justify-center rounded-full border-2 border-[var(--ows-red)] bg-black shadow-[0_0_20px_var(--ows-red-glow)]">
-                    {i === 0 && <span className="text-[var(--ows-red)]">🚀</span>}
+                    {i === 0 && <Rocket className="text-[var(--ows-red)]" size={24} />}
                     {i === 1 && <Globe className="text-[var(--ows-red)]" size={24} />}
                     {i === 2 && <Handshake className="text-[var(--ows-red)]" size={24} />}
                     {i === 3 && <Target className="text-[var(--ows-red)]" size={24} />}
