@@ -18,7 +18,7 @@ export const Route = createFileRoute("/about")({
 });
 
 const ABOUT_STATS = [
-  { icon: <Briefcase size={32} strokeWidth={1.5} />, value: "7", label: "Business Verticals" },
+  { icon: <Briefcase size={32} strokeWidth={1.5} />, value: "9", label: "Business Verticals" },
   { icon: <Users size={32} strokeWidth={1.5} />, value: "1000+", label: "Experts & Professionals" },
   { icon: <Layers size={32} strokeWidth={1.5} />, value: "100+", label: "Major Projects Delivered" },
   { icon: <Handshake size={32} strokeWidth={1.5} />, value: "10,000+", label: "Active Clients" },

@@ -19,7 +19,7 @@ export const Route = createFileRoute("/capabilities")({
 });
 
 const HERO_STATS = [
-  { icon: <Briefcase size={32} strokeWidth={1.5} />, value: "7", label: "BUSINESSES" },
+  { icon: <Briefcase size={32} strokeWidth={1.5} />, value: "9", label: "BUSINESSES" },
   { icon: <Users size={32} strokeWidth={1.5} />, value: "1000+", label: "EXPERTS" },
   { icon: <Layers size={32} strokeWidth={1.5} />, value: "100+", label: "MAJOR PROJECTS DELIVERED" },
   { icon: <Handshake size={32} strokeWidth={1.5} />, value: "10,000+", label: "ACTIVE CLIENTS" },

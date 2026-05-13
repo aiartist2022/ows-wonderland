@@ -20,7 +20,7 @@ export const Route = createFileRoute("/our-group/")({
 });
 
 const HERO_STATS = [
-  { icon: <Building size={32} strokeWidth={1.5} />, value: "7", label: "INDUSTRY LEADERS" },
+  { icon: <Building size={32} strokeWidth={1.5} />, value: "9", label: "INDUSTRY LEADERS" },
   { icon: <Globe size={32} strokeWidth={1.5} />, value: "14+", label: "COUNTRIES" },
   { icon: <Users size={32} strokeWidth={1.5} />, value: "1000+", label: "PROFESSIONALS" },
   { icon: <TrendingUp size={32} strokeWidth={1.5} />, value: "1", label: "UNIFIED VISION" },
