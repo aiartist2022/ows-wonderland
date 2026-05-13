@@ -202,7 +202,7 @@ function BrandPage() {
                 — Cross-Vertical Synergy
               </p>
               <h2 className="mt-4 max-w-3xl font-display text-3xl font-black uppercase leading-tight text-foreground md:text-5xl">
-                How {brand.short} powers the rest of the group
+                How {brand.name} powers the rest of the group
               </h2>
             </Reveal>
             <Stagger className="mt-12 grid gap-6 md:grid-cols-2">
@@ -227,7 +227,7 @@ function BrandPage() {
           >
             <div>
               <p className="text-[11px] font-bold uppercase tracking-[0.25em] text-[var(--ows-red)]">
-                — Work with {brand.short}
+                — Work with {brand.name}
               </p>
               <p className="mt-3 font-display text-2xl font-bold text-foreground md:text-3xl">
                 Start the conversation

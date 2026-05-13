@@ -96,7 +96,7 @@ export const BrandCarousel = React.forwardRef<HTMLDivElement, BrandCarouselProps
               </div>
               <div className="flex items-center justify-between border-t border-white/10 bg-black/60 px-5 py-4">
                 <span className="text-[11px] font-bold uppercase tracking-[0.25em] text-foreground/80">
-                  {brand.short}
+                  {brand.name}
                 </span>
                 <span className="text-[10px] font-semibold uppercase tracking-[0.25em] text-foreground/50 transition-colors group-hover:text-[var(--ows-red)]">
                   Explore →
