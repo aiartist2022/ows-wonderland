@@ -36,7 +36,7 @@ const WHY_JOIN = [
 const ROLES = [
   { dept: "OWS Automotive", title: "Fleet Workshop Manager", location: "Sharjah, UAE", type: "Operations", time: "Full-time" },
   { dept: "AJ Industries", title: "Spare Parts Procurement Specialist", location: "Sharjah, UAE", type: "Supply Chain", time: "Full-time" },
-  { dept: "AJ Insurance Broker", title: "Insurance Account Executive", location: "Dubai, UAE", type: "Sales", time: "Full-time" },
+  { dept: "AJIB", title: "Insurance Account Executive", location: "Dubai, UAE", type: "Sales", time: "Full-time" },
   { dept: "Melt Media", title: "Digital Campaign Manager", location: "Dubai, UAE", type: "Marketing", time: "Full-time" },
   { dept: "Melt Live", title: "Events Operations Executive", location: "Abu Dhabi, UAE", type: "Operations", time: "Full-time" },
   { dept: "Platform Health Club", title: "Fitness Coach", location: "Sharjah, UAE", type: "Fitness", time: "Full-time" },
@@ -47,8 +47,8 @@ function CareersPage() {
   return (
     <SiteShell>
       <RedesignHero
-        title={<>BUILD YOUR CAREER.<br /></>}
-        highlight="BUILD THE FUTURE."
+        title={<>BUILD YOUR CAREER<br /></>}
+        highlight="BUILD THE FUTURE"
         image="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=2000&auto=format&fit=crop"
       >
         <p className="mt-4 max-w-2xl text-base text-foreground/80 md:text-xl font-bold">
@@ -104,7 +104,7 @@ function CareersPage() {
               {[
                 { name: "OWS Automotive", color: "#E11D2E" },
                 { name: "AJ Industries", color: "#C9A24A" },
-                { name: "AJ Insurance", color: "#4A7BD8" },
+                { name: "AJIB", color: "#4A7BD8" },
                 { name: "Melt Live", color: "#B14CFF" },
                 { name: "Melt Media", color: "#2DD4D4" },
                 { name: "Platform", color: "#4ADE80" },

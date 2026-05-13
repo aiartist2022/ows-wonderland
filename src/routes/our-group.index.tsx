@@ -11,7 +11,7 @@ export const Route = createFileRoute("/our-group/")({
   head: () => ({
     meta: [
       { title: "Our Group — Nine Businesses, One Vision | OWS Holdings" },
-      { name: "description", content: "Explore the nine businesses of OWS Holdings: OWS Automotive, AJ Industries, AJ Insurance, Melt Live, Melt Media, Platform Health Club and Handy Bunch." },
+      { name: "description", content: "Explore the nine businesses of OWS Holdings: OWS Automotive, AJ Industries, AJIB, Melt Live, Melt Media, Platform Health Club, Handy Bunch, ALA Corporation and Melt Education." },
       { property: "og:title", content: "Our Group — OWS Holdings" },
       { property: "og:description", content: "Nine specialised businesses operating as one integrated group." },
     ],
@@ -20,7 +20,7 @@ export const Route = createFileRoute("/our-group/")({
 });
 
 const HERO_STATS = [
-  { icon: <Building size={32} strokeWidth={1.5} />, value: "7", label: "INDUSTRY LEADERS" },
+  { icon: <Building size={32} strokeWidth={1.5} />, value: "9", label: "INDUSTRY LEADERS" },
   { icon: <Globe size={32} strokeWidth={1.5} />, value: "14+", label: "COUNTRIES" },
   { icon: <Users size={32} strokeWidth={1.5} />, value: "1000+", label: "PROFESSIONALS" },
   { icon: <TrendingUp size={32} strokeWidth={1.5} />, value: "1", label: "UNIFIED VISION" },
@@ -30,8 +30,8 @@ function OurGroupPage() {
   return (
     <SiteShell>
       <RedesignHero
-        title={<>NINE BUSINESSES.<br /></>}
-        highlight="ONE VISION."
+        title={<>NINE BUSINESSES<br /></>}
+        highlight="ONE VISION"
         image={groupHeroImg}
       >
         <p className="mt-6 max-w-2xl text-lg text-foreground/80 md:text-xl">
