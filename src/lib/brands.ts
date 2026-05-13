@@ -148,7 +148,7 @@ export const BRANDS: Brand[] = [
     image: meltLive,
     logo: logoMeltLive,
     description:
-      "Melt Live is the events and live entertainment arm of MELT Global — a cultural platform co-founded by Oweis Zahran and Steve Harvey in 2021, bridging Eastern and Western creative economies through original IP, live events and media. Steve Harvey serves as Chairman, bringing global reach, cultural credibility, and decades of experience.",
+      "Melt Live is the events and live entertainment arm of MELT Global — a cultural platform co-founded by Oweis Zahran and Steve Harvey in 2021, bridging Eastern and Western creative economies through original IP, live events, and media. Melt Live helps brands, institutions, and governments create events, festivals, and campaigns that generate real cultural value — not just visibility. MELT operates at the intersection of culture, commerce, and creative strategy, combining original IP development, media production, and tailored education into a single, integrated platform. Steve Harvey serves as Chairman, bringing global reach, cultural credibility, and decades of experience in media and live entertainment.",
     services: [
       "Original IP Festivals (FuelFest Arabia, Open Fire Food Festival)",
       "Celebrity Events & Golf Classics",
@@ -162,8 +162,25 @@ export const BRANDS: Brand[] = [
       { value: "50,000+", label: "Event Attendees" },
       { value: "2", label: "Countries" },
     ],
+    pastEvents: [
+      {
+        name: "Open Fire Food Festival",
+        description:
+          "A two-day culinary celebration co-produced with Steve Harvey in Abu Dhabi, bringing together live-fire cooking, regional performers, masterclasses, and competitions from across the UAE and beyond.",
+      },
+      {
+        name: "FuelFest Arabia",
+        description:
+          "The world-famous automotive and entertainment festival made its Middle East debut in Doha in partnership with Visit Qatar, bringing together car culture, live entertainment, and celebrity experiences for thousands of attendees across a landmark weekend.",
+      },
+      {
+        name: "Melt Golf Classic",
+        description:
+          "A premium networking and entertainment experience merging sport, culture, and business across the GCC.",
+      },
+    ],
     synergy: [
-      "All event marketing and media managed end-to-end by Melt Media",
+      "All event marketing and media managed end-to-end by Melt Media, the group's digital arm",
       "Group-wide sponsorship and partnership opportunities activated across OWS Holdings verticals",
       "Event venues and facilities serviced and maintained by Handy Bunch",
     ],
