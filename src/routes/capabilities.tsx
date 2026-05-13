@@ -80,10 +80,14 @@ function CapabilitiesPage() {
                     
                     {/* Logo/Name overlay */}
                     <div className="absolute inset-0 flex items-center justify-center p-6">
-                      <div className="text-center bg-black/40 p-4 rounded backdrop-blur-sm">
+                      <div className="text-center">
                         {brand.logo ? (
-                          <div className="flex h-12 w-32 items-center justify-center mx-auto">
-                            <img src={brand.logo} alt={brand.name} className="max-h-full max-w-full object-contain" />
+                          <div className={`flex items-center justify-center mx-auto ${
+                            ["aj-industries", "aj-insurance-broker", "platform-health-club"].includes(brand.slug)
+                              ? "h-24 w-56"
+                              : "h-12 w-32"
+                          }`}>
+                            <img src={brand.logo} alt={brand.name} className="max-h-full max-w-full object-contain drop-shadow-lg" />
                           </div>
                         ) : (
                           <>
