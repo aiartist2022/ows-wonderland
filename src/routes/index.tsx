@@ -96,7 +96,7 @@ function GroupOverview() {
           </Reveal>
           <Reveal className="lg:col-span-7" delay={0.1}>
             <p className="font-display text-xl font-medium leading-snug text-foreground/85 md:text-2xl lg:text-3xl">
-              OWS Holdings is a global, multi-vertical group headquartered in the UAE — spanning
+              OWS Holdings is a global, multi-vertical group headquartered in the UAE, spanning
               automotive, defence, aerospace, insurance, media, events, education, wellness, and
               facility management.
             </p>
@@ -193,7 +193,7 @@ function Hero() {
           transition={{ duration: 0.8, delay: 1 }}
           className="mt-8 max-w-2xl text-lg text-foreground/70 md:text-xl"
         >
-          A global, multi-vertical group headquartered in the UAE — spanning automotive, defence,
+          A global, multi-vertical group headquartered in the UAE, spanning automotive, defence,
           aerospace, insurance, media, events, education, wellness and facility management.
         </motion.p>
 
