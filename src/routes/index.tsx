@@ -18,14 +18,20 @@ import partnerSharjahCoop from "@/assets/partners/sharjah-coop.png";
 import partnerAims from "@/assets/partners/aims.png";
 import partnerLeonardo from "@/assets/partners/leonardo.png";
 import partnerAirbus from "@/assets/partners/airbus.png";
+import partnerAjman from "@/assets/partners/government-of-ajman.png";
+import partnerYasIsland from "@/assets/partners/yas-island.png";
+import partnerMiral from "@/assets/partners/miral.png";
 
 const PARTNER_LOGOS = [
   { src: partnerRta, alt: "RTA — Roads & Transport Authority" },
   { src: partnerDtc, alt: "Dubai Taxi Company" },
+  { src: partnerAjman, alt: "Government of Ajman" },
   { src: partnerTawazun, alt: "Tawazun" },
   { src: partnerUaeArmedForces, alt: "UAE Armed Forces" },
   { src: partnerEtisalat, alt: "Etisalat by e&" },
   { src: partnerVisitQatar, alt: "Visit Qatar" },
+  { src: partnerMiral, alt: "Miral" },
+  { src: partnerYasIsland, alt: "Yas Island" },
   { src: partnerSharjahCoop, alt: "Sharjah Co-operative Society" },
   { src: partnerAims, alt: "AIMS Medical Group" },
   { src: partnerLeonardo, alt: "Leonardo" },
@@ -320,7 +326,7 @@ function TrustedBy() {
               key={i}
               src={logo.src}
               alt={logo.alt}
-              className="h-16 w-auto max-w-[200px] flex-shrink-0 object-contain opacity-70 transition-opacity hover:opacity-100 md:h-20"
+              className="h-24 w-auto max-w-[280px] flex-shrink-0 object-contain opacity-70 transition-opacity hover:opacity-100 md:h-28"
               loading="lazy"
             />
           ))}
