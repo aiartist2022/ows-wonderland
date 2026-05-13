@@ -303,7 +303,7 @@ function Industries() {
 }
 
 function TrustedBy() {
-  const items = [...TRUSTED_BY, ...TRUSTED_BY];
+  const items = [...PARTNER_LOGOS, ...PARTNER_LOGOS];
   return (
     <section className="relative overflow-hidden border-t border-white/5 bg-black py-20">
       <div className="mx-auto w-full max-w-[1920px] px-6 lg:px-10">
@@ -314,14 +314,15 @@ function TrustedBy() {
       <div className="relative mt-12 overflow-hidden">
         <div className="pointer-events-none absolute inset-y-0 left-0 z-10 w-32 bg-gradient-to-r from-black to-transparent" />
         <div className="pointer-events-none absolute inset-y-0 right-0 z-10 w-32 bg-gradient-to-l from-black to-transparent" />
-        <div className="marquee flex gap-12 whitespace-nowrap">
-          {items.map((c, i) => (
-            <span
+        <div className="marquee flex items-center gap-20 whitespace-nowrap">
+          {items.map((logo, i) => (
+            <img
               key={i}
-              className="font-display text-2xl font-bold uppercase tracking-tight text-foreground/40 md:text-3xl"
-            >
-              {c} <span className="ml-12 text-[var(--ows-red)]">×</span>
-            </span>
+              src={logo.src}
+              alt={logo.alt}
+              className="h-16 w-auto max-w-[200px] flex-shrink-0 object-contain opacity-70 transition-opacity hover:opacity-100 md:h-20"
+              loading="lazy"
+            />
           ))}
         </div>
       </div>
