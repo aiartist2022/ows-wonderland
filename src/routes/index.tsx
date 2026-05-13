@@ -258,19 +258,19 @@ function ByTheNumbers() {
           </h2>
         </Reveal>
 
-        <Stagger className="mt-16 grid grid-cols-2 gap-px bg-white/5 lg:grid-cols-4">
+        <Stagger className="mt-12 grid grid-cols-2 gap-px bg-white/5 md:mt-16 lg:grid-cols-4">
           {HEADLINE_METRICS.map((m) => (
             <StaggerItem key={m.label}>
-              <div className="group relative h-full bg-black p-8 transition-colors hover:bg-[var(--ows-red)]/5 lg:p-12">
-                <p className="font-display text-6xl font-black tracking-tighter text-foreground md:text-8xl">
+              <div className="group relative h-full bg-black p-5 transition-colors hover:bg-[var(--ows-red)]/5 sm:p-7 md:p-8 lg:p-12">
+                <p className="font-display text-4xl font-black leading-none tracking-tighter text-foreground sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl">
                   {m.value}
                 </p>
-                <p className="mt-4 text-[11px] font-bold uppercase tracking-[0.25em] text-foreground/60">
+                <p className="mt-3 text-[10px] font-bold uppercase tracking-[0.2em] text-foreground/60 sm:text-[11px] sm:tracking-[0.25em] md:mt-4">
                   {m.label}
                 </p>
                 <Sparkles
                   size={18}
-                  className="absolute right-6 top-6 text-[var(--ows-red)]/0 transition-colors group-hover:text-[var(--ows-red)]"
+                  className="absolute right-4 top-4 text-[var(--ows-red)]/0 transition-colors group-hover:text-[var(--ows-red)] sm:right-6 sm:top-6"
                 />
               </div>
             </StaggerItem>
