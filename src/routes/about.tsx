@@ -78,12 +78,12 @@ function AboutPage() {
               
               <div className="mt-8 space-y-5 text-sm text-foreground/70 md:text-base leading-relaxed">
                 <p>
-                  Oweis Zahran built OWS Automotive from the ground up into a global business with ~US$800 million in revenue,
-                  3,000 employees, and a footprint in 14 countries.
+                  Oweis Zahran built OWS Automotive into a leading global provider of end-to-end fleet automotive services,
+                  with operations across multiple countries and AED 1B+ in proven savings delivered to the UAE Government.
                 </p>
                 <p>
                   In 2020, he launched OWS Capital as the investment and innovation arm, expanding into fitness, entertainment,
-                  media, live events, and insurance.
+                  media, live events and insurance.
                 </p>
                 <p>
                   He co-founded MELT Global with global entertainer Steve Harvey — merging vision, influence and impact.

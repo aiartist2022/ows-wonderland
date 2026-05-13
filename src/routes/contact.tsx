@@ -9,7 +9,7 @@ export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
       { title: "Contact OWS Holdings — Start the Conversation" },
-      { name: "description", content: "Get in touch with OWS Holdings. Headquartered in Sharjah with operations across 14 countries." },
+      { name: "description", content: "Get in touch with OWS Holdings — headquartered in the UAE with offices across the MENA region." },
       { property: "og:title", content: "Contact OWS Holdings" },
       { property: "og:description", content: "One conversation can unlock nine specialised businesses." },
     ],
@@ -19,10 +19,13 @@ export const Route = createFileRoute("/contact")({
 
 const OFFICES = [
   { city: "DUBAI", country: "UAE" },
+  { city: "SHARJAH", country: "UAE" },
   { city: "ABU DHABI", country: "UAE" },
   { city: "AJMAN", country: "UAE" },
   { city: "DOHA", country: "QATAR" },
+  { city: "RIYADH", country: "KSA" },
   { city: "BAHRAIN", country: "BAHRAIN" },
+  { city: "ATLANTA", country: "USA" },
 ];
 
 function ContactPage() {
@@ -53,8 +56,8 @@ function ContactPage() {
             <MapPin size={20} className="mt-1 text-[var(--ows-red)]" />
             <span className="text-white">
               OWS Headquarters<br />
-              Sahara Tower 2, Office 1901<br />
-              Al Nahda 1, Sharjah, UAE
+              Al Jurf Industrial 3<br />
+              Ajman, UAE
             </span>
           </div>
         </div>
