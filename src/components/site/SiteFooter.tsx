@@ -27,21 +27,29 @@ export function SiteFooter() {
         </div>
       </div>
 
-      <div className="mx-auto w-full max-w-[1920px] px-6 py-16 lg:px-10">
-        <div className="grid gap-12 lg:grid-cols-4">
-          <div>
-            <div className="flex items-center mb-4">
-              <img src={logoImg} alt="OWS Holdings" className="h-24 w-auto object-contain scale-125 origin-left" />
-            </div>
-
-            <p className="mt-6 max-w-xs text-sm leading-relaxed text-foreground/60">
-              One Group. Nine Capabilities. <span className="text-[var(--ows-red)]">Infinite Value.</span>
+      <div className="mx-auto w-full max-w-[1920px] px-6 py-20 lg:px-10">
+        <div className="grid gap-14 lg:grid-cols-12 lg:gap-10">
+          {/* Brand block */}
+          <div className="lg:col-span-4">
+            <img
+              src={logoImg}
+              alt="OWS Holdings"
+              className="h-32 w-auto object-contain md:h-40 lg:h-44"
+            />
+            <p className="mt-8 max-w-sm text-sm leading-relaxed text-foreground/60">
+              One Group. Nine Capabilities.{" "}
+              <span className="text-[var(--ows-red)]">Infinite Value.</span>
+            </p>
+            <p className="mt-4 max-w-sm text-xs leading-relaxed text-foreground/40">
+              Headquartered in Sharjah, UAE — operating across automotive, defence,
+              insurance, media, events, wellness and facility management.
             </p>
           </div>
 
-          <div>
+          {/* Group */}
+          <div className="lg:col-span-3">
             <h4 className="text-[11px] font-bold uppercase tracking-[0.25em] text-foreground/40">Group</h4>
-            <ul className="mt-5 space-y-3">
+            <ul className="mt-6 grid grid-cols-2 gap-x-6 gap-y-3 sm:grid-cols-2 lg:grid-cols-1">
               {BRANDS.map((b) => (
                 <li key={b.slug}>
                   <Link
@@ -56,9 +64,10 @@ export function SiteFooter() {
             </ul>
           </div>
 
-          <div>
+          {/* Company */}
+          <div className="lg:col-span-2">
             <h4 className="text-[11px] font-bold uppercase tracking-[0.25em] text-foreground/40">Company</h4>
-            <ul className="mt-5 space-y-3">
+            <ul className="mt-6 space-y-3">
               <li><Link to="/about" className="text-sm text-foreground/70 hover:text-foreground">About Us</Link></li>
               <li><Link to="/capabilities" className="text-sm text-foreground/70 hover:text-foreground">Capabilities</Link></li>
               <li><Link to="/careers" className="text-sm text-foreground/70 hover:text-foreground">Careers</Link></li>
@@ -66,11 +75,19 @@ export function SiteFooter() {
             </ul>
           </div>
 
-          <div>
+          {/* Connect */}
+          <div className="lg:col-span-3">
             <h4 className="text-[11px] font-bold uppercase tracking-[0.25em] text-foreground/40">Connect</h4>
-            <a href="mailto:info@owsholdings.com" className="mt-5 flex items-center gap-2 text-sm text-foreground/70 hover:text-foreground">
+            <a
+              href="mailto:info@owsholdings.com"
+              className="mt-6 flex items-center gap-2 text-sm text-foreground/70 hover:text-foreground"
+            >
               <Mail size={14} /> info@owsholdings.com
             </a>
+            <p className="mt-4 max-w-xs text-xs leading-relaxed text-foreground/40">
+              OWS Holdings HQ<br />
+              Sharjah, United Arab Emirates
+            </p>
             <div className="mt-6 flex gap-3">
               <a aria-label="LinkedIn" href="#" className="grid h-10 w-10 place-items-center border border-white/10 text-foreground/70 transition-all hover:border-[var(--ows-red)] hover:text-[var(--ows-red)]">
                 <Linkedin size={16} />
@@ -82,13 +99,17 @@ export function SiteFooter() {
           </div>
         </div>
 
-        <div className="mt-14 flex flex-col items-start justify-between gap-3 border-t border-white/5 pt-6 sm:flex-row sm:items-center">
+        <div className="mt-16 flex flex-col items-start justify-between gap-4 border-t border-white/5 pt-8 sm:flex-row sm:items-center">
           <p className="text-xs text-foreground/40">
             © {new Date().getFullYear()} OWS Holdings. All Rights Reserved.
           </p>
-          <p className="text-xs font-semibold uppercase tracking-[0.25em] text-[var(--ows-red)]">
-            owsholdings.com
-          </p>
+          <div className="flex flex-wrap items-center gap-x-6 gap-y-2 text-xs text-foreground/40">
+            <span>Sharjah · Dubai · Ajman</span>
+            <span className="hidden h-3 w-px bg-white/10 sm:block" />
+            <span className="font-semibold uppercase tracking-[0.25em] text-[var(--ows-red)]">
+              owsholdings.com
+            </span>
+          </div>
         </div>
       </div>
     </footer>
