@@ -107,7 +107,7 @@ function CareersPage() {
                 { name: "AJIB", color: "#4A7BD8" },
                 { name: "Melt Live", color: "#B14CFF" },
                 { name: "Melt Media", color: "#2DD4D4" },
-                { name: "Platform", color: "#4ADE80" },
+                { name: "Platform", color: "#a3d392" },
                 { name: "Handy Bunch", color: "#F5A524" },
               ].map((brand, i) => (
                 <div key={i} className="flex flex-col items-center gap-2 min-w-[80px]">
