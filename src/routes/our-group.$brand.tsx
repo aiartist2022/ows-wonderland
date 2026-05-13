@@ -111,12 +111,22 @@ function BrandPage() {
       {/* Metrics */}
       <section className="border-b border-white/5 bg-black py-20">
         <div className="mx-auto w-full max-w-[1920px] px-6 lg:px-10">
-          <Stagger className="grid grid-cols-2 gap-px bg-white/5 lg:grid-cols-4">
+          <Stagger
+            className={`mx-auto grid gap-px bg-white/5 ${
+              brand.metrics.length === 3
+                ? "grid-cols-1 sm:grid-cols-3 max-w-5xl"
+                : brand.metrics.length === 2
+                ? "grid-cols-1 sm:grid-cols-2 max-w-3xl"
+                : brand.metrics.length === 1
+                ? "grid-cols-1 max-w-md"
+                : "grid-cols-2 lg:grid-cols-4"
+            }`}
+          >
             {brand.metrics.map((m) => (
               <StaggerItem key={m.label}>
-                <div className="bg-black p-8 lg:p-10">
+                <div className="bg-black p-8 text-center lg:p-10">
                   <p
-                    className="font-display text-5xl font-black tracking-tighter md:text-6xl"
+                    className="font-display text-4xl font-black tracking-tighter sm:text-5xl md:text-6xl"
                     style={{ color: brand.color }}
                   >
                     {m.value}
