@@ -5,9 +5,32 @@ import { ArrowRight, ArrowUpRight, Sparkles } from "lucide-react";
 import { SiteShell } from "@/components/site/SiteShell";
 import { Reveal, Stagger, StaggerItem } from "@/components/site/Motion";
 import { BrandCarousel } from "@/components/ui/brand-carousel";
-import { BRANDS, PILLARS, INDUSTRIES, TRUSTED_BY, HEADLINE_METRICS } from "@/lib/brands";
+import { BRANDS, PILLARS, INDUSTRIES, HEADLINE_METRICS } from "@/lib/brands";
 import skylineImg from "@/assets/hero-skyline.jpg";
 import umbrellaImg from "@/assets/hero-umbrella.png";
+import partnerRta from "@/assets/partners/rta.png";
+import partnerDtc from "@/assets/partners/dtc.png";
+import partnerTawazun from "@/assets/partners/tawazun.png";
+import partnerUaeArmedForces from "@/assets/partners/uae-armed-forces.png";
+import partnerEtisalat from "@/assets/partners/etisalat.png";
+import partnerVisitQatar from "@/assets/partners/visit-qatar.png";
+import partnerSharjahCoop from "@/assets/partners/sharjah-coop.png";
+import partnerAims from "@/assets/partners/aims.png";
+import partnerLeonardo from "@/assets/partners/leonardo.png";
+import partnerAirbus from "@/assets/partners/airbus.png";
+
+const PARTNER_LOGOS = [
+  { src: partnerRta, alt: "RTA — Roads & Transport Authority" },
+  { src: partnerDtc, alt: "Dubai Taxi Company" },
+  { src: partnerTawazun, alt: "Tawazun" },
+  { src: partnerUaeArmedForces, alt: "UAE Armed Forces" },
+  { src: partnerEtisalat, alt: "Etisalat by e&" },
+  { src: partnerVisitQatar, alt: "Visit Qatar" },
+  { src: partnerSharjahCoop, alt: "Sharjah Co-operative Society" },
+  { src: partnerAims, alt: "AIMS Medical Group" },
+  { src: partnerLeonardo, alt: "Leonardo" },
+  { src: partnerAirbus, alt: "Airbus" },
+];
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -280,7 +303,7 @@ function Industries() {
 }
 
 function TrustedBy() {
-  const items = [...TRUSTED_BY, ...TRUSTED_BY];
+  const items = [...PARTNER_LOGOS, ...PARTNER_LOGOS];
   return (
     <section className="relative overflow-hidden border-t border-white/5 bg-black py-20">
       <div className="mx-auto w-full max-w-[1920px] px-6 lg:px-10">
@@ -291,14 +314,15 @@ function TrustedBy() {
       <div className="relative mt-12 overflow-hidden">
         <div className="pointer-events-none absolute inset-y-0 left-0 z-10 w-32 bg-gradient-to-r from-black to-transparent" />
         <div className="pointer-events-none absolute inset-y-0 right-0 z-10 w-32 bg-gradient-to-l from-black to-transparent" />
-        <div className="marquee flex gap-12 whitespace-nowrap">
-          {items.map((c, i) => (
-            <span
+        <div className="marquee flex items-center gap-20 whitespace-nowrap">
+          {items.map((logo, i) => (
+            <img
               key={i}
-              className="font-display text-2xl font-bold uppercase tracking-tight text-foreground/40 md:text-3xl"
-            >
-              {c} <span className="ml-12 text-[var(--ows-red)]">×</span>
-            </span>
+              src={logo.src}
+              alt={logo.alt}
+              className="h-16 w-auto max-w-[200px] flex-shrink-0 object-contain opacity-70 transition-opacity hover:opacity-100 md:h-20"
+              loading="lazy"
+            />
           ))}
         </div>
       </div>
