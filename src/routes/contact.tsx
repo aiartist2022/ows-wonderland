@@ -120,18 +120,7 @@ function ContactPage() {
                     <span className="text-sm text-foreground/80">Sunday - Thursday: 8:00 AM - 6:00 PM (GST)</span>
                   </div>
                 </div>
-
-                <div className="mt-8 h-64 w-full rounded-xl overflow-hidden border border-white/10 opacity-80 transition-opacity hover:opacity-100">
-                  <iframe 
-                    src="https://maps.google.com/maps?q=AJ%20Industries%20LLC,%20Al%20Jurf%20Industrial%203,%20Ajman&t=m&z=14&ie=UTF8&iwloc=&output=embed" 
-                    width="100%" 
-                    height="100%" 
-                    style={{ border: 0, filter: 'grayscale(1) invert(1) contrast(1.2) hue-rotate(180deg)' }} 
-                    allowFullScreen 
-                    loading="lazy" 
-                    referrerPolicy="no-referrer-when-downgrade"
-                  ></iframe>
-                </div>
+              </div>
               </div>
             </div>
           </Reveal>
