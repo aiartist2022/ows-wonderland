@@ -104,8 +104,6 @@ export function SiteFooter() {
             © {new Date().getFullYear()} OWS Holdings. All Rights Reserved.
           </p>
           <div className="flex flex-wrap items-center gap-x-6 gap-y-2 text-xs text-foreground/40">
-            <span>Sharjah · Dubai · Ajman</span>
-            <span className="hidden h-3 w-px bg-white/10 sm:block" />
             <span className="font-semibold uppercase tracking-[0.25em] text-[var(--ows-red)]">
               owsholdings.com
             </span>
