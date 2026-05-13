@@ -4,6 +4,7 @@ import { SiteShell } from "@/components/site/SiteShell";
 import { Reveal, Stagger, StaggerItem } from "@/components/site/Motion";
 import { ContactForm } from "@/components/site/ContactForm";
 import { RedesignHero } from "@/components/site/Redesign";
+import hqMap from "@/assets/hq-map.png";
 
 export const Route = createFileRoute("/contact")({
   head: () => ({
