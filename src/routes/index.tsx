@@ -12,7 +12,7 @@ import umbrellaImg from "@/assets/hero-umbrella.png";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "OWS Holdings — One Group. Nine Capabilities. Infinite Value." },
+      { title: "OWS Holdings — One Group. Nine Capabilities. Infinite Value" },
       {
         name: "description",
         content:
@@ -112,7 +112,7 @@ function Hero() {
           <br />
           Nine Capabilities.
           <br />
-          <span className="text-[var(--ows-red)] text-glow-red">Infinite Value.</span>
+          <span className="text-[var(--ows-red)] text-glow-red">Infinite Value</span>
         </motion.h1>
 
         <motion.p
@@ -121,7 +121,7 @@ function Hero() {
           transition={{ duration: 0.8, delay: 1 }}
           className="mt-8 max-w-2xl text-lg text-foreground/70 md:text-xl"
         >
-          A global, multi-vertical group headquartered in Sharjah — spanning automotive, defence,
+          A global, multi-vertical group headquartered in the UAE — spanning automotive, defence,
           aerospace, insurance, media, events, education, wellness and facility management.
         </motion.p>
 
@@ -164,7 +164,7 @@ function CapabilityRail() {
           <div>
             <p className="text-[11px] font-bold uppercase tracking-[0.35em] text-[var(--ows-red)]">— Our Capabilities</p>
             <h2 className="mt-4 max-w-3xl font-display text-4xl font-black uppercase leading-[0.95] tracking-tight text-foreground md:text-6xl">
-              Nine businesses.<br /> One unstoppable group.
+              Nine businesses.<br /> One unstoppable group
             </h2>
           </div>
           <Link to="/our-group" className="group inline-flex items-center gap-2 text-[11px] font-semibold uppercase tracking-[0.25em] text-foreground/70 hover:text-[var(--ows-red)]">
@@ -189,7 +189,7 @@ function Pillars() {
           <Reveal className="lg:col-span-5">
             <p className="text-[11px] font-bold uppercase tracking-[0.35em] text-[var(--ows-red)]">— Why OWS</p>
             <h2 className="mt-4 font-display text-4xl font-black uppercase leading-[0.95] tracking-tight text-foreground md:text-6xl">
-              Five reasons<br /> the world's most<br /> trusted brands<br /> choose us.
+              Five reasons<br /> the world's most<br /> trusted brands<br /> choose us
             </h2>
             <p className="mt-6 max-w-md text-foreground/70">
               Cross-vertical synergy, government-grade trust, and integrated execution at MENA scale.
@@ -225,7 +225,7 @@ function ByTheNumbers() {
         <Reveal>
           <p className="text-[11px] font-bold uppercase tracking-[0.35em] text-[var(--ows-red)]">— OWS by the Numbers</p>
           <h2 className="mt-4 max-w-3xl font-display text-4xl font-black uppercase leading-[0.95] tracking-tight text-foreground md:text-6xl">
-            Scale you can <span className="text-[var(--ows-red)]">measure</span>.
+            Scale you can <span className="text-[var(--ows-red)]">measure</span>
           </h2>
         </Reveal>
 
