@@ -253,21 +253,27 @@ function ByTheNumbers() {
 }
 
 function Industries() {
+  const items = [...INDUSTRIES, ...INDUSTRIES];
   return (
     <section className="relative overflow-hidden border-t border-white/5 bg-[var(--ows-panel)] py-24">
       <div className="mx-auto w-full max-w-[1920px] px-6 lg:px-10">
         <Reveal>
           <p className="text-[11px] font-bold uppercase tracking-[0.35em] text-[var(--ows-red)]">— Industries We Serve</p>
         </Reveal>
-        <Stagger className="mt-12 flex flex-wrap gap-3">
-          {INDUSTRIES.map((label) => (
-            <StaggerItem key={label}>
-              <span className="inline-flex border border-white/10 px-5 py-3 text-[11px] font-semibold uppercase tracking-[0.18em] text-foreground/80 transition-all hover:border-[var(--ows-red)] hover:text-[var(--ows-red)]">
-                {label}
-              </span>
-            </StaggerItem>
+      </div>
+      <div className="relative mt-12 overflow-hidden">
+        <div className="pointer-events-none absolute inset-y-0 left-0 z-10 w-32 bg-gradient-to-r from-[var(--ows-panel)] to-transparent" />
+        <div className="pointer-events-none absolute inset-y-0 right-0 z-10 w-32 bg-gradient-to-l from-[var(--ows-panel)] to-transparent" />
+        <div className="marquee flex gap-3 whitespace-nowrap">
+          {items.map((label, i) => (
+            <span
+              key={`${label}-${i}`}
+              className="inline-flex border border-white/10 px-5 py-3 text-[11px] font-semibold uppercase tracking-[0.18em] text-foreground/80 transition-all hover:border-[var(--ows-red)] hover:text-[var(--ows-red)]"
+            >
+              {label}
+            </span>
           ))}
-        </Stagger>
+        </div>
       </div>
     </section>
   );
