@@ -155,10 +155,10 @@ function BrandPage() {
               Services & capabilities
             </h2>
           </Reveal>
-          <Stagger className="mt-14 grid gap-px bg-white/5 md:grid-cols-2 lg:grid-cols-3">
+          <Stagger className="mt-14 grid gap-x-8 gap-y-6 md:grid-cols-2 lg:grid-cols-3">
             {brand.services.map((s) => (
               <StaggerItem key={s}>
-                <div className="group flex items-start gap-4 bg-[var(--ows-panel)] p-6 transition-all hover:bg-black md:p-8">
+                <div className="group flex items-start gap-4 py-2">
                   <div
                     className="grid h-8 w-8 flex-none place-items-center"
                     style={{ backgroundColor: `${brand.color}22`, color: brand.color }}
