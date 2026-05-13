@@ -187,6 +187,42 @@ function BrandPage() {
         </div>
       </section>
 
+      {/* Past Events */}
+      {brand.pastEvents && brand.pastEvents.length > 0 && (
+        <section className="border-b border-white/5 bg-[var(--ows-panel)] py-24">
+          <div className="mx-auto w-full max-w-[1920px] px-6 lg:px-10">
+            <Reveal>
+              <p
+                className="text-[11px] font-bold uppercase tracking-[0.35em]"
+                style={{ color: brand.color }}
+              >
+                — Past Events
+              </p>
+              <h2 className="mt-4 max-w-3xl font-display text-3xl font-black uppercase leading-tight text-foreground md:text-5xl">
+                Signature moments
+              </h2>
+            </Reveal>
+            <Stagger className="mt-12 grid gap-px bg-white/5 md:grid-cols-3">
+              {brand.pastEvents.map((e) => (
+                <StaggerItem key={e.name}>
+                  <div className="h-full bg-[var(--ows-panel)] p-6 md:p-8">
+                    <p
+                      className="font-display text-xl font-bold text-foreground md:text-2xl"
+                      style={{ color: brand.color }}
+                    >
+                      {e.name}
+                    </p>
+                    <p className="mt-4 text-base leading-relaxed text-foreground/75">
+                      {e.description}
+                    </p>
+                  </div>
+                </StaggerItem>
+              ))}
+            </Stagger>
+          </div>
+        </section>
+      )}
+
       {/* Synergy */}
       {brand.synergy.length > 0 && (
         <section
