@@ -37,7 +37,11 @@ export function SiteHeader() {
     >
       <div className="mx-auto flex w-full max-w-[1920px] items-center justify-between px-6 py-4 lg:px-10">
         <Link to="/" className="group flex items-center">
-          <img src={logoImg} alt="OWS Holdings" className="h-20 w-auto object-contain scale-125 origin-left" />
+          <img
+            src={logoImg}
+            alt="OWS Holdings"
+            className="h-16 w-auto max-w-[180px] object-contain origin-left sm:h-20 sm:max-w-[220px] md:h-24 md:max-w-[260px] lg:h-28 lg:max-w-[300px] xl:h-32 xl:max-w-[340px]"
+          />
         </Link>
 
         <nav className="hidden items-center gap-8 lg:flex">
