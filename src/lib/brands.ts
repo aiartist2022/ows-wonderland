@@ -143,7 +143,7 @@ export const BRANDS: Brand[] = [
     short: "M",
     tagline: "World-Class Live Experiences",
     category: "WORLD-CLASS EVENTS & BRAND EXPERIENCES",
-    color: "#B14CFF",
+    color: "#c5529d",
     image: meltLive,
     logo: logoMeltLive,
     description:
