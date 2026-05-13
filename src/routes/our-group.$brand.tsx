@@ -173,30 +173,6 @@ function BrandPage() {
         </div>
       </section>
 
-      {/* Clients */}
-      <section className="border-b border-white/5 bg-black py-24">
-        <div className="mx-auto w-full max-w-[1920px] px-6 lg:px-10">
-          <Reveal>
-            <p className="text-[11px] font-bold uppercase tracking-[0.35em] text-foreground/40">— Trusted By</p>
-            <h2 className="mt-4 font-display text-3xl font-black uppercase leading-tight text-foreground md:text-5xl">
-              Selected clients
-            </h2>
-          </Reveal>
-          <Stagger className="mt-12 flex flex-wrap gap-3">
-            {brand.clients.map((c) => (
-              <StaggerItem key={c}>
-                <span
-                  className="inline-flex border border-white/10 px-5 py-3 text-[11px] font-semibold uppercase tracking-[0.18em] text-foreground/80 transition-all hover:text-foreground"
-                  style={{ borderColor: `${brand.color}55` }}
-                >
-                  {c}
-                </span>
-              </StaggerItem>
-            ))}
-          </Stagger>
-        </div>
-      </section>
-
       {/* Past Events */}
       {brand.pastEvents && brand.pastEvents.length > 0 && (
         <section className="border-b border-white/5 bg-[var(--ows-panel)] py-24">
