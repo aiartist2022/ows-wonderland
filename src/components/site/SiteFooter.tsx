@@ -41,7 +41,7 @@ export function SiteFooter() {
               <span className="text-[var(--ows-red)]">Infinite Value.</span>
             </p>
             <p className="mt-4 max-w-sm text-xs leading-relaxed text-foreground/40">
-              Headquartered in Sharjah, UAE — operating across automotive, defence,
+              Headquartered in Dubai, UAE — operating across automotive, defence,
               insurance, media, events, wellness and facility management.
             </p>
           </div>
