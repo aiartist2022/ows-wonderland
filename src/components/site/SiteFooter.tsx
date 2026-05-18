@@ -1,6 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import { Linkedin, Instagram, Mail, ArrowUpRight } from "lucide-react";
-import { BRANDS } from "@/lib/brands";
+import { BRANDS, BRAND_WEBSITES } from "@/lib/brands";
 import logoImg from "@/assets/logo.png";
 
 export function SiteFooter() {
