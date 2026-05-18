@@ -45,7 +45,7 @@ export const Route = createFileRoute("/")({
       {
         name: "description",
         content:
-          "Global multi-vertical group across automotive, defence, aerospace, insurance, media, events, education, wellness and facility management. Headquartered in Sharjah, UAE.",
+          "Global multi-vertical group across automotive, defence, aerospace, insurance, media, events, education, wellness and facility management. Headquartered in Dubai, UAE.",
       },
       { property: "og:title", content: "OWS Holdings — One Group. Nine Capabilities." },
       { property: "og:description", content: "Trusted partner to UAE government and global brands across nine verticals." },

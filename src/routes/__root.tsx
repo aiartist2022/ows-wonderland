@@ -34,7 +34,7 @@ export const Route = createRootRoute({
       {
         name: "description",
         content:
-          "OWS Holdings is a global, multi-vertical group spanning automotive, defence, insurance, media, events, wellness and facility management. Headquartered in Sharjah.",
+          "OWS Holdings is a global, multi-vertical group spanning automotive, defence, insurance, media, events, wellness and facility management. Headquartered in Dubai.",
       },
       { name: "author", content: "OWS Holdings" },
       { property: "og:title", content: "OWS Holdings — One Group. Nine Capabilities. Infinite Value." },

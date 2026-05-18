@@ -1,6 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import { Linkedin, Instagram, Mail, ArrowUpRight } from "lucide-react";
-import { BRANDS } from "@/lib/brands";
+import { BRANDS, BRAND_WEBSITES } from "@/lib/brands";
 import logoImg from "@/assets/logo.png";
 
 export function SiteFooter() {
@@ -41,7 +41,7 @@ export function SiteFooter() {
               <span className="text-[var(--ows-red)]">Infinite Value.</span>
             </p>
             <p className="mt-4 max-w-sm text-xs leading-relaxed text-foreground/40">
-              Headquartered in Sharjah, UAE — operating across automotive, defence,
+              Headquartered in Dubai, UAE — operating across automotive, defence,
               insurance, media, events, wellness and facility management.
             </p>
           </div>
@@ -51,7 +51,7 @@ export function SiteFooter() {
             <h4 className="text-[11px] font-bold uppercase tracking-[0.25em] text-foreground/40">Group</h4>
             <ul className="mt-6 grid grid-cols-2 gap-x-6 gap-y-3 sm:grid-cols-2 lg:grid-cols-1">
               {BRANDS.map((b) => (
-                <li key={b.slug}>
+                <li key={b.slug} className="flex items-center gap-2">
                   <Link
                     to="/our-group/$brand"
                     params={{ brand: b.slug }}
@@ -59,6 +59,17 @@ export function SiteFooter() {
                   >
                     {b.name}
                   </Link>
+                  {BRAND_WEBSITES[b.slug] && (
+                    <a
+                      href={BRAND_WEBSITES[b.slug]}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label={`${b.name} website`}
+                      className="text-foreground/30 transition-colors hover:text-[var(--ows-red)]"
+                    >
+                      <ArrowUpRight size={12} />
+                    </a>
+                  )}
                 </li>
               ))}
             </ul>
@@ -86,7 +97,8 @@ export function SiteFooter() {
             </a>
             <p className="mt-4 max-w-xs text-xs leading-relaxed text-foreground/40">
               OWS Holdings HQ<br />
-              Sharjah, United Arab Emirates
+              Dubai Design District, Building 1B,<br />
+              Office 707, Dubai, United Arab Emirates
             </p>
             <div className="mt-6 flex gap-3">
               <a aria-label="LinkedIn" href="#" className="grid h-10 w-10 place-items-center border border-white/10 text-foreground/70 transition-all hover:border-[var(--ows-red)] hover:text-[var(--ows-red)]">

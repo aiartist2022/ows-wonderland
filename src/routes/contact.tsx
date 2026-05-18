@@ -85,8 +85,8 @@ function ContactPage() {
               <div className="mt-auto">
                 <h3 className="font-display text-xl font-bold text-[var(--ows-red)] mb-2">OWS Holdings</h3>
                 <p className="font-display text-xl text-white">
-                  AJ Industries LLC<br />
-                  Al Jurf Industrial 3, Ajman, UAE
+                  Dubai Design District, Building 1B,<br />
+                  Office 707, Dubai, United Arab Emirates
                 </p>
 
                 <div className="space-y-4">

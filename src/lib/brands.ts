@@ -38,6 +38,7 @@ export interface Brand {
   color: string;
   image: string;
   logo?: string;
+  website?: string;
   description: string;
   services: string[];
   clients: string[];
@@ -45,6 +46,18 @@ export interface Brand {
   synergy: string[];
   pastEvents?: { name: string; description: string }[];
 }
+
+export const BRAND_WEBSITES: Record<BrandSlug, string> = {
+  "ows-automotive": "https://www.owsauto.com/",
+  "aj-industries": "https://www.aj.industries/",
+  "ajib": "https://ajinsurance.crossoverproductions.ae/",
+  "melt-live": "https://melt-global.com/melt-live/",
+  "melt-media": "https://melt-global.com/melt-media/",
+  "platform-health-club": "https://www.platformhealthclub.com/",
+  "handy-bunch": "https://handybunch.net/",
+  "ala-corporation": "https://www.alacorporation.com/",
+  "melt-education": "https://meltedu.com/",
+};
 
 export const BRANDS: Brand[] = [
   {
