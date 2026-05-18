@@ -257,7 +257,29 @@ function BrandPage() {
 
       {/* Next + CTA */}
       <section className="border-b border-white/5 bg-black py-20">
-        <div className="mx-auto grid w-full max-w-[1920px] gap-8 px-6 lg:grid-cols-2 lg:px-10">
+        <div className="mx-auto grid w-full max-w-[1920px] gap-8 px-6 lg:grid-cols-3 lg:px-10">
+          {BRAND_WEBSITES[brand.slug] && (
+            <a
+              href={BRAND_WEBSITES[brand.slug]}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group flex items-center justify-between border p-8 transition-all hover:bg-foreground/5 md:p-12"
+              style={{ borderColor: `${brand.color}55` }}
+            >
+              <div>
+                <p
+                  className="text-[11px] font-bold uppercase tracking-[0.25em]"
+                  style={{ color: brand.color }}
+                >
+                  — Visit {brand.name}
+                </p>
+                <p className="mt-3 font-display text-2xl font-bold text-foreground md:text-3xl">
+                  Go to website
+                </p>
+              </div>
+              <ArrowUpRight size={28} className="text-foreground transition-transform group-hover:rotate-45" />
+            </a>
+          )}
           <Link
             to="/contact"
             className="group flex items-center justify-between border border-white/10 p-8 transition-all hover:border-[var(--ows-red)] hover:bg-[var(--ows-red)]/5 md:p-12"
