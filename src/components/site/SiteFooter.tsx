@@ -51,7 +51,7 @@ export function SiteFooter() {
             <h4 className="text-[11px] font-bold uppercase tracking-[0.25em] text-foreground/40">Group</h4>
             <ul className="mt-6 grid grid-cols-2 gap-x-6 gap-y-3 sm:grid-cols-2 lg:grid-cols-1">
               {BRANDS.map((b) => (
-                <li key={b.slug}>
+                <li key={b.slug} className="flex items-center gap-2">
                   <Link
                     to="/our-group/$brand"
                     params={{ brand: b.slug }}
@@ -59,6 +59,17 @@ export function SiteFooter() {
                   >
                     {b.name}
                   </Link>
+                  {BRAND_WEBSITES[b.slug] && (
+                    <a
+                      href={BRAND_WEBSITES[b.slug]}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label={`${b.name} website`}
+                      className="text-foreground/30 transition-colors hover:text-[var(--ows-red)]"
+                    >
+                      <ArrowUpRight size={12} />
+                    </a>
+                  )}
                 </li>
               ))}
             </ul>
