@@ -91,6 +91,21 @@ function BrandPage() {
           >
             {brand.tagline}
           </motion.p>
+          {BRAND_WEBSITES[brand.slug] && (
+            <motion.a
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.55 }}
+              href={BRAND_WEBSITES[brand.slug]}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group mt-8 inline-flex items-center gap-3 border-2 px-6 py-3 text-[11px] font-bold uppercase tracking-[0.25em] text-foreground transition-all hover:bg-foreground hover:text-background"
+              style={{ borderColor: brand.color }}
+            >
+              Visit Website
+              <ArrowUpRight size={16} className="transition-transform group-hover:rotate-45" />
+            </motion.a>
+          )}
         </div>
       </section>
 
