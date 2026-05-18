@@ -3,7 +3,7 @@ import { ArrowRight, ArrowUpRight, Check } from "lucide-react";
 import { motion } from "framer-motion";
 import { SiteShell } from "@/components/site/SiteShell";
 import { Reveal, Stagger, StaggerItem } from "@/components/site/Motion";
-import { BRANDS, type Brand, type BrandSlug } from "@/lib/brands";
+import { BRANDS, BRAND_WEBSITES, type Brand, type BrandSlug } from "@/lib/brands";
 
 export const Route = createFileRoute("/our-group/$brand")({
   loader: ({ params }) => {
