@@ -97,7 +97,8 @@ export function SiteFooter() {
             </a>
             <p className="mt-4 max-w-xs text-xs leading-relaxed text-foreground/40">
               OWS Holdings HQ<br />
-              Sharjah, United Arab Emirates
+              Dubai Design District, Building 1B,<br />
+              Office 707, Dubai, United Arab Emirates
             </p>
             <div className="mt-6 flex gap-3">
               <a aria-label="LinkedIn" href="#" className="grid h-10 w-10 place-items-center border border-white/10 text-foreground/70 transition-all hover:border-[var(--ows-red)] hover:text-[var(--ows-red)]">
