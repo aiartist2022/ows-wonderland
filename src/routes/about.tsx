@@ -9,7 +9,7 @@ export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
       { title: "About OWS Holdings — Vision, Mission & Leadership" },
-      { name: "description", content: "Learn about OWS Holdings — a Sharjah-headquartered, multi-vertical group built on trust, innovation and integrated value across the MENA region." },
+      { name: "description", content: "Learn about OWS Holdings — a Dubai-headquartered, multi-vertical group built on trust, innovation and integrated value across the MENA region." },
       { property: "og:title", content: "About OWS Holdings" },
       { property: "og:description", content: "Vision, mission, leadership and milestones of OWS Holdings." },
     ],
